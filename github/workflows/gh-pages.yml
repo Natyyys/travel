@@ -1,4 +1,4 @@
-name: Deploy to GitHub-Pages
+name: deploy-to-github-pages
 
 on:
   push:
@@ -8,30 +8,24 @@ on:
 jobs:
   deploy:
     name: Deploy
-
-    permissions:
-      contents: write
-
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version-file: "package.json"
-
-      - name: Restore cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: cache-npm-${{ hashFiles('./package-lock.json') }}
-          restore-keys: cache-npm-
+          node-version: 16
 
       - name: Install dependencies
         run: npm i
+
+      - name: Run checks
+        run: npm run test
 
       - name: Build project
         run: npm run build
@@ -41,4 +35,3 @@ jobs:
         with:
           folder: ./build
           branch: gh-pages
-          single-commit: true
