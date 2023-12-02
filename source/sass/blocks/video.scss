@@ -1,0 +1,43 @@
+.video__wrapper {
+  position: relative;
+}
+
+.video-button {
+  padding: 0;
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 56px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  z-index: 3;
+  cursor: pointer;
+
+  svg {
+    width: 12px;
+    height: 22px;
+    position: absolute;
+    color: $color-default-white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-26%, -46%);
+    z-index: 5;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translateY(2%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    inset: 0;
+    background: transparent;
+    border: 1px solid $color-default-white;
+  }
+}

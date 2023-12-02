@@ -1,0 +1,18 @@
+.audio__wrapper {
+  position: relative;
+}
+
+.audio-button {
+  padding: 0;
+  position: absolute;
+  content: "";
+  width: 47px;
+  height: 47px;
+  top: 60.5%;
+  left: 50%;
+  transform: translateX(-49%);
+  background: transparent;
+  border: none;
+  z-index: 3;
+  cursor: pointer;
+}
