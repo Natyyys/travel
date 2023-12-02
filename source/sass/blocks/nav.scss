@@ -1,0 +1,36 @@
+.nav__toggle {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2px;
+}
+
+.nav__link {
+  color: $color-default-white;
+  line-height: 1;
+  padding: 3px 5px;
+
+  &:hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+}
