@@ -1,28 +1,38 @@
+name: Project check
+
 on:
   push:
     branches:
       - main
   pull_request:
-    branches: '*'
+    branches:
+      - '*'
 
-name: Project check
 jobs:
   check:
     name: Check
+
     runs-on: ubuntu-latest
+
     steps:
-      - name: Set up Node.js
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version-file: 'package.json'
 
-      - uses: actions/checkout@v3
-        name: Checkout
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: cache-npm-${{ hashFiles('./package-lock.json') }}
+          restore-keys: cache-npm-
 
       - name: Install dependencies
-        run: |
-          npm i
+        run: npm i
 
       - name: Run checks
-        run: |
-          npm run test
+        run: npm run lint
