@@ -1,8 +1,12 @@
-.video__wrapper {
-  position: relative;
+.video {
+  iframe {
+    width: 482px;
+    height: 317px;
+  }
 }
 
-.video-button {
+.video__button {
+  position: absolute;
   padding: 0;
   position: absolute;
   content: "";
@@ -39,5 +43,35 @@
     inset: 0;
     background: transparent;
     border: 1px solid $color-default-white;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:focus-visible::after {
+    border: 1px solid $color-resolution-blue;
+  }
+
+  &:hover svg,
+  &:focus svg,
+  &:focus-visible svg {
+    stroke: $color-default-black;
+    color: $color-default-white;
+    outline: 0;
+  }
+
+  &:active::after {
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-resolution-blue;
+  }
+
+  &:disabled::after,
+  &--disabled::after {
+    border: 1px solid $color-navy-blue;
+  }
+
+  &:disabled svg,
+  &--disabled svg  {
+    color: $color-navy-blue;
+    outline: 0;
   }
 }

@@ -1,10 +1,13 @@
 .header {
+  position: absolute;
   width: 100%;
+  z-index: 3;
 }
 
-.header__menu {
+.header__wrapper {
   width: 1200px;
   min-height: 126px;
+  margin: 0 auto;
   background-color: $color-navy-blue;
   display: flex;
   padding: 32px 20px;
@@ -13,13 +16,35 @@
 }
 
 .header__logo {
+  z-index: 3;
+  outline: none;
+  color: $color-default-white;
+  cursor: pointer;
   padding: 10px 31px 3px 32px;
   align-self: center;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+  }
 }
 
-.header__nav {
-  width: 680px;
-  padding: 0 40px;
+.header__toggle {
+  @media (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .header__contacts {

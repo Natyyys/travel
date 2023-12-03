@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import {initVideoPlayer} from './modules/hero/videoplayer';
+import {initAudioPlayer} from './modules/hero/audioplayer';
+import {initSwiperHero} from './modules/hero/hero-slider';
 
 // ---------------------------------
 
@@ -19,6 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initVideoPlayer();
+    initAudioPlayer();
+    initSwiperHero();
   });
 });
 

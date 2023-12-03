@@ -15,4 +15,19 @@
   border: none;
   z-index: 3;
   cursor: pointer;
+  color: $color-resolution-blue;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    stroke: $color-default-black;
+    color: $color-default-white;
+    outline: 0;
+  }
+
+  &:disabled,
+  &--desabled {
+    color: $color-navy-blue;
+    outline: 0;
+  }
 }

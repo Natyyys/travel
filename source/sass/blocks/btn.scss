@@ -9,7 +9,9 @@
   cursor: pointer;
   transition: opacity $trans-default;
 
-  @include hover-focus {
+  &:hover,
+  &:focus,
+  &:focus-visible {
     background-color: $color-default-white;
     color: $color-resolution-blue;
     padding: 20px 19px 18px 19px;

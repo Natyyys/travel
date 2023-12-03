@@ -1,0 +1,37 @@
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  right: 0;
+}
+
+.swiper .hero__pagination {
+  position: absolute;
+  bottom: 97px;
+  right: 0;
+  z-index: 5;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  opacity: 1;
+
+  &:focus-visible {
+    opacity: 0.5;
+    outline: none;
+  }
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: $color-default-white;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  right: -7px;
+  width: 1200px;
+  margin: 0 auto;
+}
