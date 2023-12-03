@@ -2,10 +2,53 @@
   position: absolute;
   width: 100%;
   z-index: 3;
+
+  @include vp-1199 {
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+.header__contacts a {
+  color: $color-default-white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  padding: 10px 0;
+  margin-top: 3px;
+  width: fit-content;
+
+  @include vp-1199 {
+    font-size: 16px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    margin: 0;
+    padding: 16px 0 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+  }
 }
 
 .header__wrapper {
-  width: 1200px;
+  max-width: 1200px;
   min-height: 126px;
   margin: 0 auto;
   background-color: $color-navy-blue;
@@ -13,6 +56,69 @@
   padding: 32px 20px;
   justify-content: space-between;
   align-items: center;
+
+  &::before {
+    content: "";
+    position: fixed;
+    z-index: 0;
+    background-color: $color-elephant-60;
+    opacity: 0;
+    transition: opacity $trans-default;
+    inset: 0;
+    transform: scale(0);
+  }
+
+  @include vp-1199 {
+    min-height: 82px;
+    padding: 20px 45px;
+
+    &.is-opened {
+      svg,
+      .header__contacts > a {
+        color: $color-elephant;
+        z-index: 1;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+          color: $color-resolution-blue;
+          outline: none;
+        }
+
+        &:active {
+          color: $color-navy-blue;
+        }
+
+        &:default {
+          color: $color-navy-blue;
+          opacity: 0.1;
+        }
+      }
+
+      &::before {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  @include vp-767 {
+    min-height: 100px;
+    padding: 15px 15px 13px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    justify-items: end;
+  }
+}
+
+
+.header__toggle {
+  border: none;
+  background-color: transparent;
+
+  @include vp-1199 {
+    order: -1;
+  }
 }
 
 .header__logo {
@@ -20,8 +126,19 @@
   outline: none;
   color: $color-default-white;
   cursor: pointer;
-  padding: 10px 31px 3px 32px;
+  padding: 0 31px 0 32px;
   align-self: center;
+  height: 42px;
+
+  @include vp-1199 {
+    padding: 0 42px;
+    margin-left: 17.5%;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    padding: 0;
+  }
 
   &:hover,
   &:focus,
@@ -53,31 +170,8 @@
   gap: 10px;
   justify-content: end;
   width: 145px;
-}
 
-.header__contacts a {
-  color: $color-default-white;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1;
-  padding: 10px 0;
-  margin-top: 3px;
-  width: fit-content;
-
-  &:hover,
-  &:focus,
-  &:focus-visible {
-    color: $color-resolution-blue;
-    outline: none;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-
-  &:disabled,
-  &--disabled {
-    pointer-events: none;
-    cursor: default;
+  @include vp-767 {
+    grid-column: 2/ -1;
   }
 }

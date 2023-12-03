@@ -1,6 +1,49 @@
-.nav__toggle {
-  @media (min-width: 1200px) {
-    display: none;
+.nav {
+  @include vp-1199 {
+    position: absolute;
+    top: -200vh;
+    right: 0;
+    left: 0;
+    padding: 100px 38px 52px;
+    background-color: $color-default-white;
+    transition: all 0.3s linear;
+
+    &.is-opened {
+      top: 0;
+
+      a {
+        &:hover {
+          @include vp-1199 {
+            color: $color-elephant;
+            border-bottom: 1px solid $color-elephant;
+          }
+        }
+
+        &:focus,
+        &:focus-visible {
+          @include vp-1199 {
+            color: $color-elephant;
+            outline: 1px solid $color-elephant;
+            padding: 0 5px;
+          }
+        }
+
+        &:active {
+          outline: none;
+        }
+
+        &:disabled {
+          @include vp-1199 {
+            color: $color-elephant;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding: 84px 8px 35px;
   }
 }
 
@@ -13,12 +56,35 @@
   justify-content: space-around;
   margin-top: 2px;
   gap: 20px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+    gap: 18px 0;
+
+    max-width: 100%;
+    height: calc(100vh - 110px);
+    max-height: 256px;
+    margin: 0;
+    padding: 10px 0 12px 2px;
+    overflow: auto;
+    order: 0;
+  }
 }
 
 .nav__link {
   color: $color-default-white;
   line-height: 1;
   padding: 3px 5px;
+
+  @include vp-1199 {
+    font-weight: 700;
+    color: $color-elephant;
+    text-transform: uppercase;
+    letter-spacing: 0.64px;
+    margin: 0;
+  }
 
   &:hover {
     border-bottom: 1px solid $color-default-white;

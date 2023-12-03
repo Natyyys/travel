@@ -1,0 +1,43 @@
+.toggle {
+  display: none;
+
+  @include vp-1199 {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 26px;
+    padding: 0;
+    color: $color-default-white;
+    background-color: $color-transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &.is-opened {
+      padding: 0;
+    }
+  }
+
+  @include vp-767 {
+    margin-top: -16px;
+  }
+
+}
+
+.toggle .toggle__closed {
+  display: none;
+  opacity: 0;
+}
+
+.toggle.is-opened .toggle__opened {
+  display: none;
+}
+
+.toggle.is-opened .toggle__closed {
+  display: inline;
+  color: $color-elephant;
+  opacity: 1;
+  margin: 0;
+}

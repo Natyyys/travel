@@ -34,4 +34,8 @@
   right: -7px;
   width: 1200px;
   margin: 0 auto;
+
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    max-width: 1136px;
+  }
 }

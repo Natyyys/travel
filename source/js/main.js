@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import {addToggleMenu} from './modules/header-menu/toggle';
 import {initVideoPlayer} from './modules/hero/videoplayer';
 import {initAudioPlayer} from './modules/hero/audioplayer';
 import {initSwiperHero} from './modules/hero/hero-slider';
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  addToggleMenu();
 
   // Modules
   // ---------------------------------

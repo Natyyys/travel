@@ -26,8 +26,14 @@
                 <use href="img/sprite.svg#logo"></use>
               </svg>
             </a>
-            <button class="header__toggle toggle" type="button" aria-label="Отображение меню.">
-              <span class="visually-hidden">Открыть меню.</span>
+            <button class="header__toggle toggle" type="button">
+              <span class="visually-hidden">Отображение меню.</span>
+              <svg class="toggle__closed" role="img" focusable="false" width="26" height="26">
+                <use href="img/sprite.svg#toggle-open"></use>
+              </svg>
+              <svg class="toggle__opened" role="img" focusable="false" width="26" height="26">
+                <use href="img/sprite.svg#toggle-close"></use>
+              </svg>
             </button>
             <nav class="header__nav nav">
               <ul class="nav__list">
@@ -58,7 +64,7 @@
         </div>
       </header>
       <main>
-        <section class="hero">
+        <!-- <section class="hero">
           <div class="hero__container container">
             <h1 class="visually-hidden">LifeTour - организация походов в горы</h1>
             <div class="hero__slider swiper">
@@ -202,7 +208,7 @@
               <div class="hero__pagination swiper-pagination"></div>
             </div>
           </div>
-        </section>
+        </section> -->
       </main>
       <footer>
       </footer>
