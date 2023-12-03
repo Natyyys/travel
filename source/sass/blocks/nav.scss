@@ -10,40 +10,34 @@
 
     &.is-opened {
       top: 0;
-
-      a {
-        &:hover {
-          @include vp-1199 {
-            color: $color-elephant;
-            border-bottom: 1px solid $color-elephant;
-          }
-        }
-
-        &:focus,
-        &:focus-visible {
-          @include vp-1199 {
-            color: $color-elephant;
-            outline: 1px solid $color-elephant;
-            padding: 0 5px;
-          }
-        }
-
-        &:active {
-          outline: none;
-        }
-
-        &:disabled {
-          @include vp-1199 {
-            color: $color-elephant;
-            opacity: 0.5;
-          }
-        }
-      }
     }
   }
 
   @include vp-767 {
     padding: 84px 8px 35px;
+  }
+}
+
+.nav.is-opened {
+  a:hover {
+    color: $color-elephant;
+    border-bottom: 1px solid $color-elephant;
+  }
+
+  a:focus,
+  a:focus-visible {
+    color: $color-elephant;
+    outline: 1px solid $color-elephant;
+    padding: 0 5px;
+  }
+
+  a:active {
+    outline: none;
+  }
+
+  a:disabled {
+    pointer-events: none;
+    cursor: default;
   }
 }
 

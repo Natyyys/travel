@@ -1751,34 +1751,28 @@ button,
     top: 0;
   }
 }
-@media (max-width: 1199px) and (max-width: 1199px) {
-  .nav.is-opened a:hover {
-    color: #2d383f;
-    border-bottom: 1px solid #2d383f;
-  }
-}
-@media (max-width: 1199px) and (max-width: 1199px) {
-  .nav.is-opened a:focus, .nav.is-opened a:focus-visible {
-    color: #2d383f;
-    outline: 1px solid #2d383f;
-    padding: 0 5px;
-  }
-}
-@media (max-width: 1199px) {
-  .nav.is-opened a:active {
-    outline: none;
-  }
-}
-@media (max-width: 1199px) and (max-width: 1199px) {
-  .nav.is-opened a:disabled {
-    color: #2d383f;
-    opacity: 0.5;
-  }
-}
 @media (max-width: 767px) {
   .nav {
     padding: 84px 8px 35px;
   }
+}
+
+.nav.is-opened a:hover {
+  color: #2d383f;
+  border-bottom: 1px solid #2d383f;
+}
+.nav.is-opened a:focus,
+.nav.is-opened a:focus-visible {
+  color: #2d383f;
+  outline: 1px solid #2d383f;
+  padding: 0 5px;
+}
+.nav.is-opened a:active {
+  outline: none;
+}
+.nav.is-opened a:disabled {
+  pointer-events: none;
+  cursor: default;
 }
 
 .nav__list {
