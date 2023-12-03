@@ -1,5 +1,4 @@
 import gulp from 'gulp';
-import ghPages from 'gulp-gp-pages';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {compileStyles, compileMinStyles} from './gulp/compileStyles.mjs';
@@ -43,6 +42,5 @@ const refresh = (done) => {
 const build = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg));
 const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
 const start = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compileMainScripts, compileVendorScripts), syncServer);
-const deploy = () => gulp.src('./build/**/*').pipe(ghPages());
 
-export { createWebp as webp, build, start, dev, deploy};
+export { createWebp as webp, build, start, dev};
