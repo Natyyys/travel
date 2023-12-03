@@ -11,6 +11,10 @@
   display: flex;
   gap: 12px;
   justify-content: flex-end;
+
+  @include vp-1199 {
+    bottom: 40px;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -37,5 +41,11 @@
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     max-width: 1136px;
+  }
+
+  @include vp-1199 {
+    max-width: 100%;
+    right: 50%;
+    transform: translateX(-44.9%);
   }
 }

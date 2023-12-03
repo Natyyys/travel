@@ -29,10 +29,10 @@
   height: auto;
   padding: 107px 0 0 0;
 
-  &:focus-visible {
-    outline: 2px solid $color-resolution-blue;
-    outline-offset: -5px;
-  }
+  // &:focus-visible {
+  //   outline: 2px solid $color-resolution-blue;
+  //   outline-offset: -5px;
+  // }
 }
 
 .hero__content {
@@ -44,6 +44,15 @@
   @media (min-width: 1200px) and (max-width: 1439px) {
     max-width: 1136px;
   }
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 122px;
+  }
 }
 
 .hero__text {
@@ -51,13 +60,13 @@
   flex-direction: column;
   max-width: 944px;
   width: fit-content;
-  padding: 0 10px 0 0;
+  // padding: 0 10px 0 0;
 
   h2 {
     font-style: normal;
     font-size: 77px;
     font-weight: 800;
-    line-height: 77px;
+    line-height: 1;
     color: $color-default-white;
     text-align: left;
     position: relative;
@@ -65,6 +74,13 @@
     padding: 0;
     max-width: 945px;
     z-index: 5;
+
+    @include vp-1199 {
+      font-size: 56px;
+      text-align: center;
+      padding: 0 30px;
+      margin-bottom: 13px;
+    }
   }
 
   p {
@@ -81,6 +97,14 @@
     @media (min-width: 1200px) and (max-width: 1439px) {
       padding: 0 20px 0 0;
     }
+
+    @include vp-1199 {
+      text-align: center;
+      align-self: center;
+      max-width: 500px;
+      padding: 0 10px;
+      margin-bottom: 27px;
+    }
   }
 }
 
@@ -95,6 +119,10 @@
   width: 180px;
   margin-bottom: 134px;
   background-color: $color-navy-blue;
+
+  @include vp-1199 {
+    margin-bottom: 45px;
+  }
 }
 
 .hero__info {
@@ -107,11 +135,11 @@
 
 .hero__info-item {
   font-size: 12px;
-      line-height: 16px;
-      padding: 13px 19px 13px;
-      border: 1px solid $color-default-white-50;
-      display: flex;
-      gap: 8px;
+  line-height: 16px;
+  padding: 13px 19px 13px;
+  border: 1px solid $color-default-white-50;
+  display: flex;
+  gap: 8px;
 
   span {
     font-style: normal;
@@ -123,6 +151,10 @@
 }
 
 .hero__info-item {
+  @include vp-1199 {
+    display: none;
+  }
+
   svg {
     margin-top: 2px;
   }
@@ -140,6 +172,12 @@
   z-index: 4;
   width: 482px;
   height: 317px;
+
+  @include vp-1199 {
+    position: relative;
+    width: 442px;
+    height: 300px;
+  }
 
   img {
     width: 100%;
@@ -177,12 +215,22 @@
   right: 0;
   top: 13%;
   z-index: 1;
+
+  @include vp-1199 {
+    position: relative;
+    width: 442px;
+    height: 365px;
+  }
 }
 
 .hero__audio {
   position: absolute;
   top: 52%;
   right: 0;
+
+  @include vp-1199 {
+    position: relative;
+  }
 
   iframe {
     width: 340px;

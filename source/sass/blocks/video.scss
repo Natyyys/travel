@@ -2,6 +2,11 @@
   iframe {
     width: 482px;
     height: 317px;
+
+    @include vp-1199 {
+      width: 442px;
+      height: 300px;
+    }
   }
 }
 
