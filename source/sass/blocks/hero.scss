@@ -15,6 +15,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include vp-767 {
+    min-height: 568px;
+  }
 }
 
 .hero__item {
@@ -25,14 +29,38 @@
   top: 0;
   left: 0;
   z-index: 2;
-  min-height: 800px;
+  min-height: 799px;
   height: auto;
   padding: 107px 0 0 0;
 
-  // &:focus-visible {
-  //   outline: 2px solid $color-resolution-blue;
-  //   outline-offset: -5px;
-  // }
+  @include vp-1199 {
+    &:first-child {
+      p {
+        padding: 0 14px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    min-height: fit-content;
+    height: fit-content;
+
+    &:first-child {
+      p {
+        padding: 0 20px;
+      }
+
+      a {
+        margin-bottom: 65px;
+      }
+    }
+
+    &:last-child {
+      h2 {
+        padding: 0 2px;
+      }
+    }
+  }
 }
 
 .hero__content {
@@ -51,7 +79,16 @@
     align-items: center;
     text-align: center;
     padding-top: 105px;
-    padding-bottom: 122px;
+    padding-bottom: 121px;
+  }
+
+  @include vp-767 {
+    padding-top: 33px;
+    padding-bottom: 99px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -60,7 +97,6 @@
   flex-direction: column;
   max-width: 944px;
   width: fit-content;
-  // padding: 0 10px 0 0;
 
   h2 {
     font-style: normal;
@@ -80,6 +116,13 @@
       text-align: center;
       padding: 0 30px;
       margin-bottom: 13px;
+    }
+
+    @include vp-767 {
+      min-height: 52px;
+      font-size: 26px;
+      padding: 0 10px;
+      margin-bottom: 15px;
     }
   }
 
@@ -104,6 +147,18 @@
       max-width: 500px;
       padding: 0 10px;
       margin-bottom: 27px;
+    }
+
+    @include vp-767 {
+      font-size: 15px;
+      line-height: 20px;
+      padding: 0 39px;
+      margin-bottom: 60px;
+      min-height: 100px;
+    }
+
+    @include vp-320 {
+      padding: 0 20px;
     }
   }
 }
@@ -179,6 +234,10 @@
     height: 300px;
   }
 
+  @include vp-767 {
+    display: none;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -221,6 +280,10 @@
     width: 442px;
     height: 365px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .hero__audio {
@@ -230,6 +293,10 @@
 
   @include vp-1199 {
     position: relative;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 
   iframe {
