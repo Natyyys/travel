@@ -2266,12 +2266,18 @@ button,
 .swiper-pagination-bullet:focus::after, .swiper-pagination-bullet:focus-visible::after {
   position: absolute;
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   top: -50%;
   left: -50%;
+}
+@media (max-width: 767px) {
+  .swiper-pagination-bullet:focus::after, .swiper-pagination-bullet:focus-visible::after {
+    width: 12px;
+    height: 12px;
+  }
 }
 .swiper-pagination-bullet:active {
   background-color: rgba(255, 255, 255, 0.5);
