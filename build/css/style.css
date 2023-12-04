@@ -1486,6 +1486,7 @@ button,
 }
 .btn:active {
   background-color: #1c3374;
+  color: #ffffff;
 }
 .btn:disabled, .btn--disabled, .btn[desabled] {
   background-color: #999999;
@@ -1588,11 +1589,7 @@ button,
   .header__wrapper.is-opened svg:active,
 .header__wrapper.is-opened .header__contacts > a:active {
     color: #0266c1;
-  }
-  .header__wrapper.is-opened svg:default,
-.header__wrapper.is-opened .header__contacts > a:default {
-    color: #0266c1;
-    opacity: 0.1;
+    opacity: 1;
   }
   .header__wrapper.is-opened::before {
     opacity: 1;
@@ -2249,6 +2246,7 @@ button,
   background-color: transparent;
   border: 1px solid #ffffff;
   opacity: 1;
+  position: relative;
 }
 @media (max-width: 767px) {
   .swiper-pagination-bullet {
@@ -2256,9 +2254,27 @@ button,
     height: 8px;
   }
 }
-.swiper-pagination-bullet:focus-visible {
-  opacity: 0.5;
+.swiper-pagination-bullet:hover {
+  background-color: #d9d9d9;
+  stroke: #ffffff;
+}
+.swiper-pagination-bullet:focus, .swiper-pagination-bullet:focus-visible {
+  padding: 1px;
+  background-color: transparent;
   outline: none;
+}
+.swiper-pagination-bullet:focus::after, .swiper-pagination-bullet:focus-visible::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  top: -50%;
+  left: -50%;
+}
+.swiper-pagination-bullet:active {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .swiper .swiper-pagination-bullet-active {

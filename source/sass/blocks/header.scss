@@ -87,11 +87,7 @@
 
         &:active {
           color: $color-navy-blue;
-        }
-
-        &:default {
-          color: $color-navy-blue;
-          opacity: 0.1;
+          opacity: 1;
         }
       }
 
