@@ -1891,7 +1891,7 @@ button,
 
 .hero__content {
   position: relative;
-  padding: 93px 0 0;
+  padding: 93px 0 80px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1939,6 +1939,20 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  gap: 23px;
+}
+@media (max-width: 1199px) {
+  .hero__text {
+    gap: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__text {
+    min-height: 52px;
+    font-size: 26px;
+    padding: 0 10px;
+    gap: 15px;
+  }
 }
 .hero__text h2 {
   font-style: normal;
@@ -1948,7 +1962,7 @@ button,
   color: #ffffff;
   text-align: left;
   position: relative;
-  margin: 0 0 23px 0;
+  margin: 0;
   padding: 0;
   max-width: 945px;
   z-index: 5;
@@ -1958,7 +1972,6 @@ button,
     font-size: 56px;
     text-align: center;
     padding: 0 30px;
-    margin-bottom: 13px;
   }
 }
 @media (max-width: 767px) {
@@ -1966,7 +1979,6 @@ button,
     min-height: 52px;
     font-size: 26px;
     padding: 0 10px;
-    margin-bottom: 15px;
   }
 }
 .hero__text p {
@@ -1976,7 +1988,7 @@ button,
   font-weight: 400;
   color: #ffffff;
   text-align: left;
-  margin: 0 0 37px;
+  margin: 0;
   padding: 0;
   max-width: 464px;
 }
@@ -1993,7 +2005,6 @@ button,
         align-self: center;
     max-width: 500px;
     padding: 0 10px;
-    margin-bottom: 27px;
   }
 }
 @media (max-width: 767px) {
@@ -2001,7 +2012,6 @@ button,
     font-size: 15px;
     line-height: 20px;
     padding: 0 39px;
-    margin-bottom: 60px;
     min-height: 100px;
   }
 }
@@ -2009,6 +2019,18 @@ button,
   .hero__text p {
     padding: 0 20px;
   }
+}
+
+.hero__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  width: 50%;
+  margin-top: 37px;
+  margin-bottom: 134px;
 }
 
 .hero__button {
@@ -2020,13 +2042,8 @@ button,
   text-align: center;
   display: block;
   width: 180px;
-  margin-bottom: 134px;
+  margin: 0;
   background-color: #0266c1;
-}
-@media (max-width: 1199px) {
-  .hero__button {
-    margin-bottom: 45px;
-  }
 }
 
 .hero__info {
@@ -2072,7 +2089,7 @@ button,
 .hero__video {
   position: absolute;
   right: 0;
-  top: 36.2%;
+  top: 32.1%;
   background-color: #1c3374;
   z-index: 4;
   width: 482px;
@@ -2126,7 +2143,7 @@ button,
   width: 410px;
   height: 459px;
   right: 0;
-  top: 13%;
+  top: 11.5%;
   z-index: 1;
 }
 @media (max-width: 1199px) {
@@ -2144,7 +2161,7 @@ button,
 
 .hero__audio {
   position: absolute;
-  top: 52%;
+  top: 46%;
   right: 0;
 }
 @media (max-width: 1199px) {
