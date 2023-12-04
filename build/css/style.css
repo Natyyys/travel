@@ -1889,6 +1889,12 @@ button,
   }
 }
 
+@media (max-width: 767px) {
+  .hero__item:first-child .hero__button-wrapper {
+    margin-top: 40px;
+  }
+}
+
 .hero__content {
   position: relative;
   padding: 93px 0 80px;
@@ -2011,13 +2017,13 @@ button,
   .hero__text p {
     font-size: 15px;
     line-height: 20px;
-    padding: 0 39px;
+    padding: 0 30px;
     min-height: 100px;
   }
 }
 @media (max-width: 320px) {
   .hero__text p {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 }
 
@@ -2041,6 +2047,16 @@ button,
     margin-bottom: 45px;
   }
 }
+@media (max-width: 767px) {
+  .hero__button-wrapper {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .hero__button-wrapper {
+    margin-top: 20px;
+  }
+}
 
 .hero__button {
   font-style: normal;
@@ -2050,7 +2066,7 @@ button,
   color: #ffffff;
   text-align: center;
   display: block;
-  width: 180px;
+  min-width: 180px;
   margin: 0;
   background-color: #0266c1;
 }
