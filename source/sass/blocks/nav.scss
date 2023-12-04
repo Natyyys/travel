@@ -1,4 +1,6 @@
 .nav {
+  max-width: 713px;
+
   @include vp-1199 {
     position: absolute;
     top: -200vh;
@@ -47,9 +49,10 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 2px;
-  gap: 20px;
+  justify-content: flex-start;
+  // margin-top: 2px;
+  column-gap: 1px;
+  row-gap: 2px;
 
   @include vp-1199 {
     flex-direction: column;
@@ -64,6 +67,11 @@
     padding: 10px 0 12px 2px;
     overflow: auto;
     order: 0;
+  }
+
+  li {
+    padding: 10px;
+    text-align: center;
   }
 }
 

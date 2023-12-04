@@ -1547,7 +1547,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 32px 20px;
+  padding: 0 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1736,6 +1736,9 @@ button,
   margin: 0;
 }
 
+.nav {
+  max-width: 713px;
+}
 @media (max-width: 1199px) {
   .nav {
     position: absolute;
@@ -1784,10 +1787,13 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 2px;
-  gap: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 1px;
+     -moz-column-gap: 1px;
+          column-gap: 1px;
+  row-gap: 2px;
 }
 @media (max-width: 1199px) {
   .nav__list {
@@ -1811,6 +1817,10 @@ button,
         -ms-flex-order: 0;
             order: 0;
   }
+}
+.nav__list li {
+  padding: 10px;
+  text-align: center;
 }
 
 .nav__link {
