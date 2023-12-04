@@ -33,33 +33,8 @@
   height: auto;
   padding: 107px 0 0 0;
 
-  @include vp-1199 {
-    &:first-child {
-      p {
-        padding: 0 14px;
-      }
-    }
-  }
-
   @include vp-767 {
-    min-height: fit-content;
-    height: fit-content;
-
-    &:first-child {
-      p {
-        padding: 0 20px;
-      }
-
-      a {
-        margin-bottom: 65px;
-      }
-    }
-
-    &:last-child {
-      h2 {
-        padding: 0 2px;
-      }
-    }
+    min-height: 568px;
   }
 }
 

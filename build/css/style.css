@@ -1873,28 +1873,9 @@ button,
   height: auto;
   padding: 107px 0 0 0;
 }
-@media (max-width: 1199px) {
-  .hero__item:first-child p {
-    padding: 0 14px;
-  }
-}
 @media (max-width: 767px) {
   .hero__item {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .hero__item:first-child p {
-    padding: 0 20px;
-  }
-  .hero__item:first-child a {
-    margin-bottom: 65px;
-  }
-  .hero__item:last-child h2 {
-    padding: 0 2px;
+    min-height: 568px;
   }
 }
 
