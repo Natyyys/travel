@@ -134,7 +134,7 @@
       text-align: center;
       align-self: center;
       max-width: 500px;
-      padding: 0 10px;
+      padding: 0 13px;
       // margin-bottom: 27px;
     }
 
@@ -159,6 +159,12 @@
   width: 50%;
   margin-top: 37px;
   margin-bottom: 134px;
+
+  @include vp-1199 {
+    justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 45px;
+  }
 }
 
 .hero__button {

@@ -2004,7 +2004,7 @@ button,
         -ms-grid-row-align: center;
         align-self: center;
     max-width: 500px;
-    padding: 0 10px;
+    padding: 0 13px;
   }
 }
 @media (max-width: 767px) {
@@ -2031,6 +2031,15 @@ button,
   width: 50%;
   margin-top: 37px;
   margin-bottom: 134px;
+}
+@media (max-width: 1199px) {
+  .hero__button-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 45px;
+  }
 }
 
 .hero__button {
