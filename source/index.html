@@ -99,7 +99,7 @@
                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/hero/video-poster-desktop.webp 1x, img/content/hero/video-poster-desktop@2x.webp 2x">
                             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/video-poster-tablet.webp 1x, img/content/hero/video-poster-tablet@2x.webp 2x">
                             <source media="(min-width: 1200px)" srcset="img/content/hero/video-poster-desktop.jpg 1x, img/content/hero/video-poster-desktop@2x.jpg 2x">
-                            <img src="img/content/hero/video-poster-tablet.jpg" srcset="img/content/hero/video-poster-tablet@2x.jpg 2x" width="442" height="300" alt="Обложка видео." loading="lazy" data-video-poster="data-video-poster">
+                            <img src="img/content/hero/video-poster-tablet.jpg" srcset="img/content/hero/video-poster-tablet@2x.jpg 2x" width="442" height="300" alt="Обложка видео." data-video-poster="data-video-poster">
                           </picture>
                         </a>
                         <button class="video__button" data-video-button="data-video-button">
@@ -158,7 +158,7 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/hero-kamchatka-tablet.webp, img/content/hero/hero-kamchatka-tablet@2x.webp 2x">
                     <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/hero/hero-kamchatka-tablet.jpg 1x, img/content/hero/hero-kamchatka-tablet@2x.jpg 2x">
                     <source type="image/webp" media="(min-width: 320px)" srcset="img/content/hero/hero-kamchatka-mobile.webp 1x, img/content/hero/hero-kamchatka-mobile@2x.webp 2x">
-                    <img src="img/content/hero/hero-kamchatka-mobile.jpg" srcset="img/content/hero/hero-kamchatka-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: долина с высокими горами.">
+                    <img src="img/content/hero/hero-kamchatka-mobile.jpg" srcset="img/content/hero/hero-kamchatka-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: долина с высокими горами." loading="lazy">
                   </picture>
                 </li>
                 <li class="hero__item swiper-slide" tabindex="0">
@@ -207,7 +207,7 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/hero-altai-tablet.webp, img/content/hero/hero-altai-tablet@2x.webp 2x">
                     <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/hero/hero-altai-tablet.jpg 1x, img/content/hero/hero-altai-tablet@2x.jpg 2x">
                     <source type="image/webp" media="(min-width: 320px)" srcset="img/content/hero/hero-altai-mobile.webp 1x, img/content/hero/hero-altai-mobile@2x.webp 2x">
-                    <img src="img/content/hero/hero-altai-mobile.jpg" srcset="img/content/hero/hero-altai-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: горная река.">
+                    <img src="img/content/hero/hero-altai-mobile.jpg" srcset="img/content/hero/hero-altai-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: горная река." loading="lazy">
                   </picture>
                 </li>
               </ul>
@@ -219,7 +219,7 @@
           <div class="tours__wrapper section-title container">
             <h2 data-parent="Ближайшие туры">Ближайшие туры</h2>
             <div class="tours__slider-wrapper">
-              <div class="tours__slider swiper">
+              <div class="tours__slider swiper" data-tours-slider="data-tours-slider">
                 <ol class="tours__list swiper-wrapper">
                   <li class="tours__item swiper-slide">
                     <div class="tours__content">
@@ -230,63 +230,426 @@
                           </svg>
                           <span>Кавказ</span>
                         </div>
-                        <div class="tours__days">
-                          <span>
+                        <ul class="tours__days">
+                          <li>
                             <svg role="img" focusable="false" width="20" height="20">
                               <use href="img/sprite.svg#sun"></use>
                             </svg>
-                            4 дня
-                          </span>
-                          <span>
+                            <span>4 дня</span>
+                          </li>
+                          <li>
                             <svg role="img" focusable="false" width="20" height="20">
                               <use href="img/sprite.svg#moon"></use>
                             </svg>
-                            3 ночи
-                          </span>
-                        </div>
+                            <span>3 ночи</span>
+                          </li>
+                        </ul>
                       </div>
                       <h3>Путешествие вокруг Эльбруса</h3>
                       <p></p>
                       <div class="tours__details">
                         <table>
-                          <tr>
-                            <td>Сложность:</td>
-                            <td>
-                              <svg role="img" focusable="false" width="16" height="16">
-                                <use href="img/sprite.svg#star"></use>
-                              </svg>
-                              <svg role="img" focusable="false" width="16" height="16">
-                                <use href="img/sprite.svg#star"></use>
-                              </svg>
-                              <svg role="img" focusable="false" width="16" height="16">
-                                <use href="img/sprite.svg#star"></use>
-                              </svg>
-                              <svg role="img" focusable="false" width="16" height="16">
-                                <use href="img/sprite.svg#star"></use>
-                              </svg>
-                              <svg role="img" focusable="false" width="16" height="16">
-                                <use href="img/sprite.svg#star-empty"></use>
-                              </svg>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Даты набора:</td>
-                            <td>12.06–19.06</td>
-                          </tr>
-                          <tr>
-                            <td>Группа:</td>
-                            <td>до 15 чел.</td>
-                          </tr>
+                          <tbody>
+                            <tr>
+                              <td>Сложность:</td>
+                              <td>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star-empty"></use>
+                                </svg>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Даты набора:</td>
+                              <td>12.06&nbsp;–&nbsp;19.06</td>
+                            </tr>
+                            <tr>
+                              <td>Группа:</td>
+                              <td>до&nbsp;15&nbsp;чел.</td>
+                            </tr>
+                          </tbody>
                         </table>
                       </div>
                     </div>
+                    <div class="tours__background">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/elbrus-1024.webp 1x, img/content/tours/elbrus-1024@2x.webp 2x">
+                        <img src="img/content/tours/elbrus-1024.jpg" srcset="img/content/tours/elbrus-1024@2x.jpg 2x" width="320" height="416" alt="Фон: тропа в Эльбрус." loading="lazy">
+                      </picture>
+                    </div>
                   </li>
-                  <li class="tours__item swiper-slide">Slide 2</li>
-                  <li class="tours__item swiper-slide">Slide 3</li>
+                  <li class="tours__item swiper-slide">
+                    <div class="tours__content">
+                      <div class="tours__info">
+                        <div class="tours__location">
+                          <svg role="img" focusable="false" width="16" height="16">
+                            <use href="img/sprite.svg#pin"></use>
+                          </svg>
+                          <span>Алтай</span>
+                        </div>
+                        <ul class="tours__days">
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#sun"></use>
+                            </svg>
+                            <span>14 дней</span>
+                          </li>
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#moon"></use>
+                            </svg>
+                            <span>13 ночей</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <h3>Путь к подножию Белухи</h3>
+                      <p></p>
+                      <div class="tours__details">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Сложность:</td>
+                              <td>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star-empty"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star-empty"></use>
+                                </svg>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Даты набора:</td>
+                              <td>14.06–23.06</td>
+                            </tr>
+                            <tr>
+                              <td>Группа:</td>
+                              <td>до 25 чел.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tours__background">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/belukha-1024.webp 1x, img/content/tours/belukha-1024@2x.webp 2x">
+                        <img src="img/content/tours/belukha-1024.jpg" srcset="img/content/tours/belukha-1024@2x.jpg 2x" width="320" height="416" alt="Фон: озеро у подножья Белухи." loading="lazy">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="tours__item swiper-slide">
+                    <div class="tours__content">
+                      <div class="tours__info">
+                        <div class="tours__location">
+                          <svg role="img" focusable="false" width="16" height="16">
+                            <use href="img/sprite.svg#pin"></use>
+                          </svg>
+                          <span>Адыгея</span>
+                        </div>
+                        <ul class="tours__days">
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#sun"></use>
+                            </svg>
+                            <span>7 дней</span>
+                          </li>
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#moon"></use>
+                            </svg>
+                            <span>6 ночей</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <h3>Через Фишт к Чёрному морю и обратно</h3>
+                      <p></p>
+                      <div class="tours__details">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Сложность:</td>
+                              <td>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star-empty"></use>
+                                </svg>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Даты набора:</td>
+                              <td>15.07–19.07</td>
+                            </tr>
+                            <tr>
+                              <td>Группа:</td>
+                              <td>до 22 чел.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tours__background">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/fisht-1440.webp 1x, img/content/tours/fisht-1440@2x.webp 2x">
+                        <img src="img/content/tours/fisht-1440.jpg" srcset="img/content/tours/fisht-1440@2x.jpg 2x" width="320" height="416" alt="Фон: долина с деревьями у Фишт." loading="lazy">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="tours__item swiper-slide">
+                    <div class="tours__content">
+                      <div class="tours__info">
+                        <div class="tours__location">
+                          <svg role="img" focusable="false" width="16" height="16">
+                            <use href="img/sprite.svg#pin"></use>
+                          </svg>
+                          <span>Кавказ</span>
+                        </div>
+                        <ul class="tours__days">
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#sun"></use>
+                            </svg>
+                            <span>4 дня</span>
+                          </li>
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#moon"></use>
+                            </svg>
+                            <span>3 ночи</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <h3>Путешествие вокруг Эльбруса</h3>
+                      <p></p>
+                      <div class="tours__details">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Сложность:</td>
+                              <td>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star-empty"></use>
+                                </svg>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Даты набора:</td>
+                              <td>12.06–19.06</td>
+                            </tr>
+                            <tr>
+                              <td>Группа:</td>
+                              <td>до 15 чел.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tours__background">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/elbrus-1024.webp 1x, img/content/tours/elbrus-1024@2x.webp 2x">
+                        <img src="img/content/tours/elbrus-1024.jpg" srcset="img/content/tours/elbrus-1024@2x.jpg 2x" width="320" height="416" alt="Фон: тропа в Эльбрус." loading="lazy">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="tours__item swiper-slide">
+                    <div class="tours__content">
+                      <div class="tours__info">
+                        <div class="tours__location">
+                          <svg role="img" focusable="false" width="16" height="16">
+                            <use href="img/sprite.svg#pin"></use>
+                          </svg>
+                          <span>Алтай</span>
+                        </div>
+                        <ul class="tours__days">
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#sun"></use>
+                            </svg>
+                            <span>14 дней</span>
+                          </li>
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#moon"></use>
+                            </svg>
+                            <span>13 ночей</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <h3>Путь к подножию Белухи</h3>
+                      <p></p>
+                      <div class="tours__details">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Сложность:</td>
+                              <td>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star-empty"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star-empty"></use>
+                                </svg>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Даты набора:</td>
+                              <td>14.06–23.06</td>
+                            </tr>
+                            <tr>
+                              <td>Группа:</td>
+                              <td>до 25 чел.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tours__background">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/belukha-1024.webp 1x, img/content/tours/belukha-1024@2x.webp 2x">
+                        <img src="img/content/tours/belukha-1024.jpg" srcset="img/content/tours/belukha-1024@2x.jpg 2x" width="320" height="416" alt="Фон: озеро у подножья Белухи." loading="lazy">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="tours__item swiper-slide">
+                    <div class="tours__content">
+                      <div class="tours__info">
+                        <div class="tours__location">
+                          <svg role="img" focusable="false" width="16" height="16">
+                            <use href="img/sprite.svg#pin"></use>
+                          </svg>
+                          <span>Адыгея</span>
+                        </div>
+                        <ul class="tours__days">
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#sun"></use>
+                            </svg>
+                            <span>7 дней</span>
+                          </li>
+                          <li>
+                            <svg role="img" focusable="false" width="20" height="20">
+                              <use href="img/sprite.svg#moon"></use>
+                            </svg>
+                            <span>6 ночей</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <h3>Через Фишт к Чёрному морю и обратно</h3>
+                      <p></p>
+                      <div class="tours__details">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Сложность:</td>
+                              <td>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg role="img" focusable="false" width="16" height="16">
+                                  <use href="img/sprite.svg#star-empty"></use>
+                                </svg>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Даты набора:</td>
+                              <td>15.07–19.07</td>
+                            </tr>
+                            <tr>
+                              <td>Группа:</td>
+                              <td>до 22 чел.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tours__background">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/fisht-1440.webp 1x, img/content/tours/fisht-1440@2x.webp 2x">
+                        <img src="img/content/tours/fisht-1440.jpg" srcset="img/content/tours/fisht-1440@2x.jpg 2x" width="320" height="416" alt="Фон: долина с деревьями у Фишт." loading="lazy">
+                      </picture>
+                    </div>
+                  </li>
                 </ol>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
               </div>
+              <div class="tours__buttons">
+                <button class="tours__button" data-tours-prev="data-tours-prev" type="button">
+                  <svg role="img" width="14" height="8">
+                    <use href="img/sprite.svg#slider-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="tours__button" data-tours-next="data-tours-next" type="button">
+                  <svg role="img" width="14" height="8">
+                    <use href="img/sprite.svg#slider-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="tours__more">
+              <a href="#">Показать все туры
+                <svg role="img" width="9" height="14">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </section>

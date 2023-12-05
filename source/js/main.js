@@ -4,6 +4,7 @@ import {addToggleMenu} from './modules/header-menu/toggle';
 import {initVideoPlayer} from './modules/hero/videoplayer';
 import {initAudioPlayer} from './modules/hero/audioplayer';
 import {initSwiperHero} from './modules/hero/hero-slider';
+import {initToursSlider} from './modules/tours/tours-slider';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initVideoPlayer();
     initAudioPlayer();
     initSwiperHero();
+    initToursSlider();
   });
 });
 
