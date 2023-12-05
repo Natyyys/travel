@@ -2444,6 +2444,7 @@ button,
 
 .tours {
   padding: 123px 0 77px;
+  position: relative;
 }
 
 .tours__wrapper {
@@ -2729,6 +2730,12 @@ button,
 }
 .tours__more a:disabled svg, .tours__more a--disabled svg {
   color: rgba(2, 102, 193, 0.1);
+}
+
+.tours__clouds {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* @mixin hover-focus {

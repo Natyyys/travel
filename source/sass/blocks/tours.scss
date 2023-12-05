@@ -1,5 +1,6 @@
 .tours  {
   padding: 123px 0 77px;
+  position: relative;
 }
 
 .tours__wrapper {
@@ -231,4 +232,10 @@
       }
     }
   }
+}
+
+.tours__clouds {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
