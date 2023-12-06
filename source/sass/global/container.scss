@@ -4,7 +4,7 @@
   padding: 0 120px;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
-    padding: 0 32px;
+    padding: 0;
   }
 
   @include vp-1199 {

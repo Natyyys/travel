@@ -5,6 +5,13 @@
     font-weight: 800;
     line-height: 1;
     position: relative;
+    padding-right: 15%;
+    
+
+    @include vp-767 {
+      font-size: 22px;
+      padding-right: 30%;
+    }
   }
 }
 
@@ -16,5 +23,6 @@
     font-size: 55px;
     color: $color-elephant-3;
     content: attr(data-parent);
+    white-space: nowrap;
   }
 }

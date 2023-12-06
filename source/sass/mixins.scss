@@ -25,6 +25,12 @@
   }
 }
 
+@mixin vp-1024 {
+  @media (min-width: ($vp-1024)) {
+    @content;
+  }
+}
+
 @mixin vp-767 {
   @media (max-width: ($vp-768 - 1px)) {
     @content;
@@ -32,7 +38,7 @@
 }
 
 @mixin vp-320 {
-  @media (max-width: ($vp-320)) {
+  @media (min-width: ($vp-320)) {
     @content;
   }
 }
