@@ -99,7 +99,6 @@
     color: $color-default-white;
     text-align: left;
     position: relative;
-    // margin: 0 0 23px 0;
     margin: 0;
     padding: 0;
     max-width: 945px;
@@ -109,14 +108,12 @@
       font-size: 56px;
       text-align: center;
       padding: 0 30px;
-      // margin-bottom: 13px;
     }
 
     @include vp-767 {
       min-height: 52px;
       font-size: 26px;
       padding: 0 10px;
-      // margin-bottom: 15px;
     }
   }
 
@@ -127,7 +124,6 @@
     font-weight: 400;
     color: $color-default-white;
     text-align: left;
-    // margin: 0 0 37px;
     margin: 0;
     padding: 0;
     max-width: 464px;
@@ -141,14 +137,12 @@
       align-self: center;
       max-width: 500px;
       padding: 0 13px;
-      // margin-bottom: 27px;
     }
 
     @include vp-767 {
       font-size: 15px;
       line-height: 20px;
       padding: 0 30px;
-      // margin-bottom: 60px;
       min-height: 100px;
     }
 
@@ -182,20 +176,7 @@
 }
 
 .hero__button {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  color: $color-default-white;
-  text-align: center;
-  display: block;
   min-width: 180px;
-  margin: 0;;
-  background-color: $color-navy-blue;
-
-  // @include vp-1199 {
-  //   margin-bottom: 45px;
-  // }
 }
 
 .hero__info {

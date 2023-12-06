@@ -1,21 +1,21 @@
 .btn {
-  display: inline-flex;
-  padding: 21px 20px 19px 20px;
+  display: inline-block;
   color: $color-default-white;
   background-color: $color-navy-blue;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1;
   border: none;
   cursor: pointer;
   transition: opacity $trans-default;
   user-select: none;
+  text-align: center;
 
   &:hover,
   &:focus,
   &:focus-visible {
     background-color: $color-default-white;
     color: $color-resolution-blue;
-    padding: 20px 19px 18px 19px;
     border: 1px solid $color-resolution-blue;
     outline: none;
   }
@@ -31,5 +31,40 @@
     background-color: $color-nobel;
     pointer-events: none;
     cursor: default;
+  }
+
+  &--primary {
+    padding: 21px 20px 19px 20px;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      padding: 20px 19px 18px 19px;
+    }
+  }
+
+  &--secondary {
+    width: 37px;
+    height: 35px;
+    fill: $color-default-white;
+
+    svg {
+      display: block;
+      margin: auto;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      fill: $color-resolution-blue;
+    }
+
+    &:active {
+      fill: $color-default-white;
+    }
+
+    &:disabled {
+      fill: $color-default-white;
+    }
   }
 }

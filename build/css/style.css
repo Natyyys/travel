@@ -1464,13 +1464,11 @@ button,
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 21px 20px 19px 20px;
+  display: inline-block;
   color: #ffffff;
   background-color: #0266c1;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1;
   border: none;
   cursor: pointer;
@@ -1480,11 +1478,11 @@ button,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  text-align: center;
 }
 .btn:hover, .btn:focus, .btn:focus-visible {
   background-color: #ffffff;
   color: #1c3374;
-  padding: 20px 19px 18px 19px;
   border: 1px solid #1c3374;
   outline: none;
 }
@@ -1496,6 +1494,30 @@ button,
   background-color: #999999;
   pointer-events: none;
   cursor: default;
+}
+.btn--primary {
+  padding: 21px 20px 19px 20px;
+}
+.btn--primary:hover, .btn--primary:focus, .btn--primary:focus-visible {
+  padding: 20px 19px 18px 19px;
+}
+.btn--secondary {
+  width: 37px;
+  height: 35px;
+  fill: #ffffff;
+}
+.btn--secondary svg {
+  display: block;
+  margin: auto;
+}
+.btn--secondary:hover, .btn--secondary:focus, .btn--secondary:focus-visible {
+  fill: #1c3374;
+}
+.btn--secondary:active {
+  fill: #ffffff;
+}
+.btn--secondary:disabled {
+  fill: #ffffff;
 }
 
 .header {
@@ -2060,16 +2082,7 @@ button,
 }
 
 .hero__button {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  color: #ffffff;
-  text-align: center;
-  display: block;
   min-width: 180px;
-  margin: 0;
-  background-color: #0266c1;
 }
 
 .hero__info {
@@ -2670,34 +2683,6 @@ button,
   gap: 4px;
   top: -38px;
   right: 0;
-}
-
-.tours__button {
-  width: 37px;
-  height: 35px;
-  background-color: #0266c1;
-  fill: #ffffff;
-  cursor: pointer;
-  border: none;
-}
-.tours__button svg {
-  display: block;
-  margin: auto;
-}
-.tours__button:hover, .tours__button:focus, .tours__button:focus-visible {
-  background-color: #ffffff;
-  border: 1px solid #1c3374;
-  fill: #1c3374;
-  outline: none;
-}
-.tours__button:active {
-  background-color: #1c3374;
-  fill: #ffffff;
-}
-.tours__button:disabled {
-  background-color: #d9d9d9;
-  fill: #ffffff;
-  border: none;
 }
 
 .tours__more {

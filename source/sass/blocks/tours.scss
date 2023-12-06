@@ -93,7 +93,6 @@
   table {
     width: 100%;
     display: block;
-    // align-self: stretch;
   }
 
   tbody {
@@ -101,7 +100,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    // margin-right: 3px;
   }
 
   tr {
@@ -109,8 +107,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 8px;
-    // margin-left: -2px;
-    // margin-bottom: -2px;
     margin-right: 6px;
     height: min-content;
 
@@ -160,40 +156,6 @@
   gap: 4px;
   top: -38px;
   right: 0;
-}
-
-.tours__button {
-  width: 37px;
-  height: 35px;
-  background-color: $color-navy-blue;
-  fill: $color-default-white;
-  cursor: pointer;
-  border: none;
-
-  svg {
-    display: block;
-    margin: auto;
-  }
-
-  &:hover,
-  &:focus,
-  &:focus-visible {
-    background-color: $color-default-white;
-    border: 1px solid $color-resolution-blue;
-    fill: $color-resolution-blue;
-    outline: none;
-  }
-
-  &:active {
-    background-color: $color-resolution-blue;
-    fill: $color-default-white;
-  }
-
-  &:disabled {
-    background-color: $color-gainsboro;
-    fill: $color-default-white;
-    border: none;
-  }
 }
 
 .tours__more {
