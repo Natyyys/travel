@@ -1,0 +1,29 @@
+.training__wrapper {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 56px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  h3 {
+    margin: 0;
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 700;
+  }
+}
+
+.training__title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
+
+  p {
+    padding-right: 380px;
+    margin: 0;
+  }
+}

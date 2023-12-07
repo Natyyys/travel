@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header" id="header">
+      <header class="header" id="header" data-test="hero">
         <div class="container">
           <div class="header__wrapper">
             <a class="header__logo" href="index.html">
@@ -41,7 +41,7 @@
                   <a class="nav__link" href="#tours">Туры</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#coaches">Обучение</a>
+                  <a class="nav__link" href="#training">Обучение</a>
                 </li>
                 <li class="nav__item">
                   <a class="nav__link" href="#about">О нас</a>
@@ -215,7 +215,7 @@
             </div>
           </div>
         </section>
-        <section class="tours" id="tours">
+        <section class="tours" id="tours" data-test="tours">
           <div class="tours__wrapper section-title container">
             <h2 data-parent="Ближайшие туры">Ближайшие туры</h2>
             <div class="tours__slider-wrapper">
@@ -663,6 +663,273 @@
               <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/clouds/cloud-mountain-768.png 1x, img/content/clouds/cloud-mountain-768@2x.png 2x">
               <img src="img/content/clouds/cloud-mountain-320.png" srcset="img/content/clouds/cloud-mountain-320@2x.jpg 2x" width="171" height="595" alt="Гора в облаках." loading="lazy">
             </picture>
+          </div>
+        </section>
+
+        <section class="training" id="training" data-test="training">
+          <div class="training__wrapper section-title container">
+            <div class="training__title">
+              <h2 data-parent="Обучение">Обучение</h2>
+              <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+            </div>
+            <div class="coaches">
+              <h3>Наши инструкторы</h3>
+              <div class="coaches__slider swiper" data-coaches-slider="data-coaches-slider">
+                <ol class="coaches__list swiper-wrapper">
+                  <li class="coaches__item swiper-slide">
+                    <div class="coaches__content">
+                      <div class="coaches__image-wrapper">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/coaches/coach-1-1440.webp 1x, img/content/coaches/coach-1-1440@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/coaches/coach-1-768.webp 1x, img/content/coaches/coach-1-768@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/coaches/coach-1-350.webp 1x, img/content/coaches/coach-1-350@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/coaches/coach-1-1440.png 1x, img/content/coaches/coach-1-1440@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/coaches/coach-1-768.png 1x, img/content/coaches/coach-1-768@2x.png 2x">
+                          <img src="img/content/coaches/coach-1-350.jpg" srcset="img/content/coaches/coach-1-350@2x.jpg 2x" width="290" height="200" alt="Александр Прокофьев." loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="coaches__name">
+                        <h4>Александр Прокофьев</h4>
+                        <div class="coaches__social">
+                          <a href="#">
+                            <svg role="img" width="14" height="8">
+                              <use href="img/sprite.svg#vk"></use>
+                            </svg>
+                            <span class="visually-hidden">Страница тренера ВКонтакте.</span>
+                          </a>
+                        </div>
+                      </div>
+                      <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                    </div>
+                  </li>
+                  <li class="coaches__item swiper-slide">
+                    <div class="coaches__content">
+                      <div class="coaches__image-wrapper">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/coaches/coach-2-1440.webp 1x, img/content/coaches/coach-2-1440@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/coaches/coach-2-768.webp 1x, img/content/coaches/coach-2-768@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/coaches/coach-2-350.webp 1x, img/content/coaches/coach-2-350@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/coaches/coach-2-1440.png 1x, img/content/coaches/coach-2-1440@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/coaches/coach-2-768.png 1x, img/content/coaches/coach-2-768@2x.png 2x">
+                          <img src="img/content/coaches/coach-2-350.jpg" srcset="img/content/coaches/coach-2-350@2x.jpg 2x" width="290" height="200" alt="Светлана Афиногенова." loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="coaches__name">
+                        <h4>Светлана Афиногенова</h4>
+                        <div class="coaches__social">
+                          <a href="#">
+                            <svg role="img" width="14" height="8">
+                              <use href="img/sprite.svg#vk"></use>
+                            </svg>
+                            <span class="visually-hidden">Страница тренера ВКонтакте.</span>
+                          </a>
+                        </div>
+                      </div>
+                      <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                    </div>
+                  </li>
+                  <li class="coaches__item swiper-slide">
+                    <div class="coaches__content">
+                      <div class="coaches__image-wrapper">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/coaches/coach-3-1440.webp 1x, img/content/coaches/coach-3-1440@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/coaches/coach-3-768.webp 1x, img/content/coaches/coach-3-768@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/coaches/coach-3-350.webp 1x, img/content/coaches/coach-3-350@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/coaches/coach-3-1440.png 1x, img/content/coaches/coach-3-1440@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/coaches/coach-3-768.png 1x, img/content/coaches/coach-3-768@2x.png 2x">
+                          <img src="img/content/coaches/coach-3-350.jpg" srcset="img/content/coaches/coach-3-350@2x.jpg 2x" width="290" height="200" alt="Надежда Колесниченко." loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="coaches__name">
+                        <h4>Надежда Колесниченко</h4>
+                        <div class="coaches__social">
+                          <a href="#">
+                            <svg role="img" width="14" height="8">
+                              <use href="img/sprite.svg#vk"></use>
+                            </svg>
+                            <span class="visually-hidden">Страница тренера ВКонтакте.</span>
+                          </a>
+                        </div>
+                      </div>
+                      <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                    </div>
+                  </li>
+                  <li class="coaches__item swiper-slide">
+                    <div class="coaches__content">
+                      <div class="coaches__image-wrapper">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/coaches/coach-4-1440.webp 1x, img/content/coaches/coach-4-1440@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/coaches/coach-4-768.webp 1x, img/content/coaches/coach-4-768@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/coaches/coach-4-350.webp 1x, img/content/coaches/coach-4-350@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/coaches/coach-4-1440.png 1x, img/content/coaches/coach-4-1440@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/coaches/coach-4-768.png 1x, img/content/coaches/coach-4-768@2x.png 2x">
+                          <img src="img/content/coaches/coach-4-350.jpg" srcset="img/content/coaches/coach-4-350@2x.jpg 2x" width="290" height="200" alt="Федор Кайгородов." loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="coaches__name">
+                        <h4>Федор Кайгородов</h4>
+                        <div class="coaches__social">
+                          <a href="#">
+                            <svg role="img" width="14" height="8">
+                              <use href="img/sprite.svg#vk"></use>
+                            </svg>
+                            <span class="visually-hidden">Страница тренера ВКонтакте.</span>
+                          </a>
+                        </div>
+                      </div>
+                      <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    </div>
+                  </li>
+                  <li class="coaches__item swiper-slide">
+                    <div class="coaches__content">
+                      <div class="coaches__image-wrapper">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/coaches/coach-1-1440.webp 1x, img/content/coaches/coach-1-1440@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/coaches/coach-1-768.webp 1x, img/content/coaches/coach-1-768@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/coaches/coach-1-350.webp 1x, img/content/coaches/coach-1-350@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/coaches/coach-1-1440.png 1x, img/content/coaches/coach-1-1440@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/coaches/coach-1-768.png 1x, img/content/coaches/coach-1-768@2x.png 2x">
+                          <img src="img/content/coaches/coach-1-350.jpg" srcset="img/content/coaches/coach-1-350@2x.jpg 2x" width="290" height="200" alt="Александр Прокофьев." loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="coaches__name">
+                        <h4>Александр Прокофьев</h4>
+                        <div class="coaches__social">
+                          <a href="#">
+                            <svg role="img" width="14" height="8">
+                              <use href="img/sprite.svg#vk"></use>
+                            </svg>
+                            <span class="visually-hidden">Страница тренера ВКонтакте.</span>
+                          </a>
+                        </div>
+                      </div>
+                      <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                    </div>
+                  </li>
+                  <li class="coaches__item swiper-slide">
+                    <div class="coaches__content">
+                      <div class="coaches__image-wrapper">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/coaches/coach-2-1440.webp 1x, img/content/coaches/coach-2-1440@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/coaches/coach-2-768.webp 1x, img/content/coaches/coach-2-768@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/coaches/coach-2-350.webp 1x, img/content/coaches/coach-2-350@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/coaches/coach-2-1440.png 1x, img/content/coaches/coach-2-1440@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/coaches/coach-2-768.png 1x, img/content/coaches/coach-2-768@2x.png 2x">
+                          <img src="img/content/coaches/coach-2-350.jpg" srcset="img/content/coaches/coach-2-350@2x.jpg 2x" width="290" height="200" alt="Светлана Афиногенова." loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="coaches__name">
+                        <h4>Светлана Афиногенова</h4>
+                        <div class="coaches__social">
+                          <a href="#">
+                            <svg role="img" width="14" height="8">
+                              <use href="img/sprite.svg#vk"></use>
+                            </svg>
+                            <span class="visually-hidden">Страница тренера ВКонтакте.</span>
+                          </a>
+                        </div>
+                      </div>
+                      <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                    </div>
+                  </li>
+                  <li class="coaches__item swiper-slide">
+                    <div class="coaches__content">
+                      <div class="coaches__image-wrapper">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/coaches/coach-3-1440.webp 1x, img/content/coaches/coach-3-1440@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/coaches/coach-3-768.webp 1x, img/content/coaches/coach-3-768@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/coaches/coach-3-350.webp 1x, img/content/coaches/coach-3-350@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/coaches/coach-3-1440.png 1x, img/content/coaches/coach-3-1440@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/coaches/coach-3-768.png 1x, img/content/coaches/coach-3-768@2x.png 2x">
+                          <img src="img/content/coaches/coach-3-350.jpg" srcset="img/content/coaches/coach-3-350@2x.jpg 2x" width="290" height="200" alt="Надежда Колесниченко." loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="coaches__name">
+                        <h4>Надежда Колесниченко</h4>
+                        <div class="coaches__social">
+                          <a href="#">
+                            <svg role="img" width="14" height="8">
+                              <use href="img/sprite.svg#vk"></use>
+                            </svg>
+                            <span class="visually-hidden">Страница тренера ВКонтакте.</span>
+                          </a>
+                        </div>
+                      </div>
+                      <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                    </div>
+                  </li>
+                  <li class="coaches__item swiper-slide">
+                    <div class="coaches__content">
+                      <div class="coaches__image-wrapper">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/coaches/coach-4-1440.webp 1x, img/content/coaches/coach-4-1440@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/coaches/coach-4-768.webp 1x, img/content/coaches/coach-4-768@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/coaches/coach-4-350.webp 1x, img/content/coaches/coach-4-350@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/coaches/coach-4-1440.png 1x, img/content/coaches/coach-4-1440@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/coaches/coach-4-768.png 1x, img/content/coaches/coach-4-768@2x.png 2x">
+                          <img src="img/content/coaches/coach-4-350.jpg" srcset="img/content/coaches/coach-4-350@2x.jpg 2x" width="290" height="200" alt="Федор Кайгородов." loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="coaches__name">
+                        <h4>Федор Кайгородов</h4>
+                        <div class="coaches__social">
+                          <a href="#">
+                            <svg role="img" width="14" height="8">
+                              <use href="img/sprite.svg#vk"></use>
+                            </svg>
+                            <span class="visually-hidden">Страница тренера ВКонтакте.</span>
+                          </a>
+                        </div>
+                      </div>
+                      <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="coaches__buttons">
+                <button class="btn btn--secondary" data-coaches-prev="data-coaches-prev" type="button">
+                  <span class="visually-hidden">Назад.</span>
+                  <svg role="img" width="14" height="8">
+                    <use href="img/sprite.svg#slider-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="btn btn--secondary" data-coaches-next="data-coaches-next" type="button">
+                  <span class="visually-hidden">Вперед.</span>
+                  <svg role="img" width="14" height="8">
+                    <use href="img/sprite.svg#slider-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="process">
+              <h3>Процесс обучения</h3>
+              <ul class="process__list">
+                <li class="process__item">
+                  <svg role="img" width="25" height="25">
+                    <use href="img/sprite.svg#map"></use>
+                  </svg>
+                  <p>Изучение спортивного туристского движения</p>
+                </li>
+                <li class="process__item">
+                  <svg role="img" width="25" height="25">
+                    <use href="img/sprite.svg#boots"></use>
+                  </svg>
+                  <p>Подготовка и техническое снаряжение в походах</p>
+                </li>
+                <li class="process__item">
+                  <svg role="img" width="25" height="25">
+                    <use href="img/sprite.svg#pine-tree"></use>
+                  </svg>
+                  <p>Лекции по окружающей среде, экологии и гигиене</p>
+                </li>
+                <li class="process__item">
+                  <svg role="img" width="25" height="25">
+                    <use href="img/sprite.svg#mountain"></use>
+                  </svg>
+                  <p>Разъяснение сложности горных препятствий</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </main>

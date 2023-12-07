@@ -5,6 +5,7 @@ import {initVideoPlayer} from './modules/hero/videoplayer';
 import {initAudioPlayer} from './modules/hero/audioplayer';
 import {initSwiperHero} from './modules/hero/hero-slider';
 import {initToursSlider} from './modules/tours/tours-slider';
+import {initCoachesSlider} from './modules/coaches/coaches-slider';
 
 // ---------------------------------
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAudioPlayer();
     initSwiperHero();
     initToursSlider();
+    initCoachesSlider();
   });
 });
 

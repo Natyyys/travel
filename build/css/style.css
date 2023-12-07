@@ -1387,8 +1387,6 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
 }
 .wrapper .header,
 .wrapper .footer {
@@ -1432,12 +1430,6 @@ button,
   display: none;
 }
 
-.no-transition {
-  /* stylelint-disable-next-line */
-  -webkit-transition: none !important;
-  transition: none !important;
-}
-
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
@@ -1461,6 +1453,10 @@ button,
   .container {
     padding: 0 15px;
   }
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 .btn {
@@ -2513,6 +2509,7 @@ button,
 .tours__item {
   max-width: 380px;
   min-height: 416px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2820,7 +2817,263 @@ button,
     width: 171px;
     height: 595px;
   }
-} /* @mixin hover-focus {
+}
+
+.training__wrapper {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 56px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.training__wrapper h3 {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.training__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
+}
+.training__title p {
+  padding-right: 380px;
+  margin: 0;
+}
+
+.coaches {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 18px;
+  position: relative;
+  padding-top: 4px;
+}
+.coaches h3 {
+  min-height: 55px;
+}
+
+.coaches__slider {
+  width: 100%;
+}
+
+.coaches__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.coaches__item {
+  width: 285px;
+  height: auto;
+  padding: 14px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  background-color: #ffffff;
+}
+
+.coaches__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+.coaches__content h4 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  padding-right: 26px;
+}
+.coaches__content p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  min-height: 64px;
+}
+
+.coaches__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.coaches__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 4px;
+  width: 33%;
+}
+.coaches__social a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  padding: 8px 5px;
+  fill: #2d383f;
+}
+.coaches__social a:hover, .coaches__social a:focus-within, .coaches__social a:focus-visible {
+  border-color: #2d383f;
+  outline: none;
+}
+.coaches__social a:active {
+  background-color: #0266c1;
+  border-color: #0266c1;
+  fill: #ffffff;
+}
+
+.coaches__buttons {
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+
+.process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 27px;
+  padding-top: 2px;
+}
+.process h3 {
+  margin: 0;
+}
+
+.process__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (253px)[4];
+  grid-template-columns: repeat(4, 253px);
+  gap: 50px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.process__item {
+  position: relative;
+  padding: 0 10px 16px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+.process__item p {
+  margin: 0;
+  width: 210px;
+  padding-left: 10px;
+}
+.process__item svg {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-top: 2px;
+}
+.process__item::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #0266c1;
+  bottom: 0;
+}
+.process__item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+  left: 20px;
+  min-width: 100%;
+  height: 1px;
+  background-color: rgba(2, 102, 193, 0.2);
+  overflow: hidden;
+}
+.process__item:last-child::after {
+  right: -1000vw;
+}
+
+.process__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
