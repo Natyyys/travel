@@ -14,6 +14,7 @@ const initCoachesSlider = () => {
       320: {
         slidesPerView: 1,
         allowTouchMove: true,
+        initialSlide: 2,
       },
       768: {
         slidesPerView: 3,
