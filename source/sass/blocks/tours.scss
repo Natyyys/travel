@@ -10,6 +10,12 @@
     overflow: hidden;
     padding: 56px 0 20px;
   }
+
+  h2 {
+    @media (min-width: 768px) and (max-width: 1199px) {
+      font-size: 35px;
+    }
+  }
 }
 
 .tours__wrapper {
@@ -130,7 +136,6 @@
   table {
     width: 100%;
     display: block;
-    // align-self: stretch;
   }
 
   tbody {
@@ -138,7 +143,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    // margin-right: 3px;
   }
 
   tr {
@@ -146,8 +150,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 8px;
-    // margin-left: -2px;
-    // margin-bottom: -2px;
     margin-right: 6px;
     height: min-content;
 

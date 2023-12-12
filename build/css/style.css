@@ -2446,6 +2446,11 @@ button,
   position: relative;
   padding-right: 15%;
 }
+@media (max-width: 1199px) {
+  .section-title h2 {
+    font-size: 25px;
+  }
+}
 @media (max-width: 767px) {
   .section-title h2 {
     font-size: 22px;
@@ -2476,6 +2481,11 @@ button,
   .tours {
     overflow: hidden;
     padding: 56px 0 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .tours h2 {
+    font-size: 35px;
   }
 }
 
@@ -2851,6 +2861,7 @@ button,
   .training__wrapper {
     padding-top: 26px;
     row-gap: 28px;
+    padding-bottom: 21px;
   }
 }
 @media (max-width: 1199px) {
@@ -2888,7 +2899,7 @@ button,
     gap: 21px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .training__title {
     gap: 16px;
   }
@@ -2934,7 +2945,7 @@ button,
     gap: 28px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .coaches {
     gap: 23px;
   }
@@ -3046,7 +3057,7 @@ button,
     top: 3.9%;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .coaches__buttons {
     top: 4.2%;
   }
@@ -3349,6 +3360,189 @@ button,
 .process__list li:first-child + li + li::before {
     top: -7px;
     bottom: unset;
+  }
+}
+
+.about {
+  padding: 5px 120px 81px 0;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .about {
+    padding-top: 0;
+    padding-right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    padding: 0;
+  }
+}
+
+.about__wrapper {
+  max-width: 44.3333333333%;
+  margin: 0;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 55px;
+}
+@media (max-width: 1199px) {
+  .about__wrapper {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    min-width: 37.3697916667%;
+    gap: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .about__wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    gap: 21px;
+  }
+}
+@media (max-width: 1199px) {
+  .about__wrapper h2 {
+    padding-left: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .about__wrapper h2 {
+    padding-left: 0;
+  }
+}
+.about__wrapper h3 {
+  font-size: 21px;
+  margin: 0;
+}
+@media (max-width: 1199px) {
+  .about__wrapper h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .about__wrapper h3 {
+    font-size: 16px;
+  }
+}
+.about__wrapper p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+@media (min-width: 1200px) {
+  .about__wrapper p br {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .about__wrapper p {
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .about__wrapper p {
+    line-height: 20px;
+  }
+}
+.about__wrapper ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 28px;
+}
+@media (max-width: 1199px) {
+  .about__wrapper ul {
+    gap: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .about__wrapper ul {
+    gap: 23px;
+  }
+}
+.about__wrapper li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 14px;
+}
+@media (max-width: 1199px) {
+  .about__wrapper li {
+    gap: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .about__wrapper li {
+    gap: 9px;
+  }
+}
+
+.about__clouds {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .about__clouds {
+    top: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .about__clouds {
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin-bottom: 7px;
+  }
+}
+.about__clouds img {
+  width: 808px;
+  height: 474px;
+}
+@media (max-width: 1199px) {
+  .about__clouds img {
+    width: 542px;
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .about__clouds img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
