@@ -931,7 +931,7 @@
             </div>
           </div>
         </section>
-        <section class="about" id="about">
+        <section class="about" id="about" data-test="about">
           <div class="about__clouds">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/clouds/expedition-desktop.webp 1x, img/content/clouds/expedition-desktop@2x.webp 2x">
@@ -955,6 +955,51 @@
               </li>
             </ul>
           </div>
+        </section>
+        <section class="reviews section-title container" id="reviews" data-test="reviews">
+          <h2 data-parent="Отзывы">Отзывы</h2>
+            <div class="reviews__slider swiper" data-reviews-slider="data-reviews-slider">
+              <ol class="reviews__list swiper-wrapper">
+                <li class="reviews__item swiper-slide">
+                  <div class="reviews__content">
+                    <div class="reviews__image">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/reviews/reviews-1-desktop.webp 1x, img/content/reviews/reviews-1-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/reviews/reviews-1-desktop.webp 1x, img/content/reviews/reviews-1-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/reviews/reviews-1-desktop.webp 1x, img/content/reviews/reviews-1-desktop@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/reviews/reviews-1-desktop.png 1x, img/content/reviews/reviews-1-desktop@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/reviews/reviews-1-desktop.png 1x, img/content/reviews/reviews-1-desktop@2x.png 2x">
+                          <img src="img/content/reviews/reviews-1-mobile.jpg" srcset="img/content/reviews/reviews-1-mobile@2x.jpg 2x" width="280" height="169" alt="Фролов Александр." loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="reviews__text">
+                      <blockquote>
+                        <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие эксперты — всему научили, все показали. Делились увлекательными историями о местах, людях, культуре места.</p>
+                        <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+                        <cite>
+                          <b>Фролов Александр</b>
+                          <span>38 лет, Москва</span>
+                        </cite>
+                      </blockquote>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div class="reviews__buttons">
+              <button class="btn btn--secondary" data-coaches-prev="data-coaches-prev" type="button">
+                <span class="visually-hidden">Назад.</span>
+                <svg role="img" width="14" height="8">
+                  <use href="img/sprite.svg#slider-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="btn btn--secondary" data-coaches-next="data-coaches-next" type="button">
+                <span class="visually-hidden">Вперед.</span>
+                <svg role="img" width="14" height="8">
+                  <use href="img/sprite.svg#slider-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
         </section>
       </main>
       <footer>
