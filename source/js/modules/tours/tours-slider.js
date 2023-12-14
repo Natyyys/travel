@@ -6,6 +6,8 @@ const buttonPrev = document.querySelector('[data-tours-next]');
 
 const initToursSlider = () => {
   let swiper = new Swiper(toursSlider, {
+    loop: false,
+
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,

@@ -6,6 +6,7 @@ import {initAudioPlayer} from './modules/hero/audioplayer';
 import {initSwiperHero} from './modules/hero/hero-slider';
 import {initToursSlider} from './modules/tours/tours-slider';
 import {initCoachesSlider} from './modules/coaches/coaches-slider';
+import {initReviewsSlider} from './modules/reviews/reviews-slider';
 
 // ---------------------------------
 
@@ -31,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSwiperHero();
     initToursSlider();
     initCoachesSlider();
+    initReviewsSlider();
   });
 });
 

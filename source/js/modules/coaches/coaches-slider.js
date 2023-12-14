@@ -6,6 +6,8 @@ const buttonPrev = document.querySelector('[data-coaches-next]');
 
 const initCoachesSlider = () => {
   let swiper = new Swiper(coachesSlider, {
+    loop: false,
+
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,

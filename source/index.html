@@ -968,8 +968,11 @@
             </div>
           </div>
         </section>
-        <!-- <section class="reviews section-title container" id="reviews" data-test="reviews">
-          <h2 data-parent="Отзывы">Отзывы</h2>
+        <section class="reviews section-title" id="reviews" data-test="reviews">
+          <div class="container">
+            <h2 data-parent="Отзывы">Отзывы</h2>
+          </div>
+          <div class="reviews__swiper-wraper">
             <div class="reviews__slider swiper" data-reviews-slider="data-reviews-slider">
               <ol class="reviews__list swiper-wrapper">
                 <li class="reviews__item swiper-slide">
@@ -996,23 +999,96 @@
                     </div>
                   </div>
                 </li>
+                <li class="reviews__item swiper-slide">
+                  <div class="reviews__content">
+                    <div class="reviews__image">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/reviews/reviews-2-desktop.webp 1x, img/content/reviews/reviews-2-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/reviews/reviews-2-desktop.webp 1x, img/content/reviews/reviews-2-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/reviews/reviews-2-desktop.webp 1x, img/content/reviews/reviews-2-desktop@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/reviews/reviews-2-desktop.png 1x, img/content/reviews/reviews-2-desktop@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/reviews/reviews-2-desktop.png 1x, img/content/reviews/reviews-2-desktop@2x.png 2x">
+                          <img src="img/content/reviews/reviews-2-mobile.jpg" srcset="img/content/reviews/reviews-2-mobile@2x.jpg 2x" width="280" height="169" alt="Иван Соловьёв." loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="reviews__text">
+                      <blockquote>
+                        <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!</p>
+                        <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую этот тур.</p>
+                        <cite>
+                          <b>Иван Соловьёв</b>
+                          <span>25 лет, Владивосток</span>
+                        </cite>
+                      </blockquote>
+                    </div>
+                  </div>
+                </li>
+                <li class="reviews__item swiper-slide">
+                  <div class="reviews__content">
+                    <div class="reviews__image">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/reviews/reviews-3-desktop.webp 1x, img/content/reviews/reviews-3-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/reviews/reviews-3-desktop.webp 1x, img/content/reviews/reviews-3-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/reviews/reviews-3-desktop.webp 1x, img/content/reviews/reviews-3-desktop@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/reviews/reviews-3-desktop.png 1x, img/content/reviews/reviews-3-desktop@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/reviews/reviews-3-desktop.png 1x, img/content/reviews/reviews-3-desktop@2x.png 2x">
+                          <img src="img/content/reviews/reviews-3-mobile.jpg" srcset="img/content/reviews/reviews-3-mobile@2x.jpg 2x" width="280" height="169" alt="Евгения Баженова." loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="reviews__text">
+                      <blockquote>
+                        <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.</p>
+                        <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
+                        <cite>
+                          <b>Евгения Баженова</b>
+                          <span>23 года, Кострома</span>
+                        </cite>
+                      </blockquote>
+                    </div>
+                  </div>
+                </li>
+                <li class="reviews__item swiper-slide">
+                  <div class="reviews__content">
+                    <div class="reviews__image">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/reviews/reviews-4-desktop.webp 1x, img/content/reviews/reviews-4-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/reviews/reviews-4-desktop.webp 1x, img/content/reviews/reviews-4-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 320px)" srcset="img/content/reviews/reviews-4-desktop.webp 1x, img/content/reviews/reviews-4-desktop@2x.webp 2x">
+                          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/reviews/reviews-4-desktop.png 1x, img/content/reviews/reviews-4-desktop@2x.png 2x">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/reviews/reviews-4-desktop.png 1x, img/content/reviews/reviews-4-desktop@2x.png 2x">
+                          <img src="img/content/reviews/reviews-4-mobile.jpg" srcset="img/content/reviews/reviews-4-mobile@2x.jpg 2x" width="280" height="169" alt="Елена Пирогова." loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="reviews__text">
+                      <blockquote>
+                        <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
+                        <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
+                        <cite>
+                          <b>Елена Пирогова</b>
+                          <span>37 лет, Тюмень</span>
+                        </cite>
+                      </blockquote>
+                    </div>
+                  </div>
+                </li>
               </ol>
             </div>
             <div class="reviews__buttons">
-              <button class="btn btn--secondary" data-coaches-prev="data-coaches-prev" type="button">
+              <button class="btn btn--secondary" data-reviews-prev="data-reviews-prev" type="button">
                 <span class="visually-hidden">Назад.</span>
                 <svg role="img" width="14" height="8">
                   <use href="img/sprite.svg#slider-arrow-left"></use>
                 </svg>
               </button>
-              <button class="btn btn--secondary" data-coaches-next="data-coaches-next" type="button">
+              <button class="btn btn--secondary" data-reviews-next="data-reviews-next" type="button">
                 <span class="visually-hidden">Вперед.</span>
                 <svg role="img" width="14" height="8">
                   <use href="img/sprite.svg#slider-arrow-right"></use>
                 </svg>
               </button>
             </div>
-        </section> -->
+          </div>
+        </section>
       </main>
       <footer>
       </footer>

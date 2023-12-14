@@ -1,20 +1,87 @@
 .reviews {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 30px;
+  padding-top: 53px;
+
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    max-width: 1136px;
+    margin: 0 auto;
+  }
+
+  @include vp-1199 {
+    padding-top: 57px;
+  }
+
+  @include vp-1199 {
+    padding-top: 42px;
+  }
+
+  h2 {
+    @include vp-1199 {
+      padding-left: 1px;
+    }
+  }
+}
+
+.reviews__swiper-wraper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 27px;
+  position: relative;
+
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    max-width: 1136px;
+  }
+
+  @include vp-1199 {
+    min-width: 678px;
+    padding-top: 36px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @include vp-767 {
+    min-width: 320px;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.reviews__slider {
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .reviews__list {
   padding: 0;
   margin: 0;
   list-style: none;
+  background-color: $color-default-white;
+  padding: 10px;
+
+  @include vp-1199 {
+   padding: 20px 20px 20px 0;
+  }
+
+  @include vp-767 {
+    padding: 2px 0 0;
+   }
 }
 
 .reviews__item {
-  width: 700px;
-  padding: 20px 40px 20px 20px;
+  max-width: 700px;
+  height: auto;
+  // box-shadow: 0px 0px 20px 0px $color-resolution-blue-10;
+
+  @include vp-1199 {
+    width: 565px;
+    // box-shadow: 0px 0px 30px 0px $color-resolution-blue-10;
+  }
+
+  @include vp-767 {
+    width: 320px;
+    max-width: 767px;
+    padding: 15px;
+  }
 }
 
 .reviews__content {
@@ -22,22 +89,63 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
-}
+  padding: 20px 40px 20px 20px;
+  box-shadow: 0px 0px 20px 0px $color-resolution-blue-10;
 
+  @include vp-1199 {
+    padding-right: 30px;
+    box-shadow: 0px 0px 20px 0px $color-resolution-blue-10;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 19px;
+    box-shadow: 0px 0px 20px 0px $color-resolution-blue-10;
+  }
+}
 .reviews__text {
   width: 352px;
+
+  @include vp-1199 {
+    width: 299px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 
   blockquote {
     margin: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: -2px;
+
+    @include vp-1199 {
+      margin-top: 0;
+    }
   }
 
   p {
     margin: 0;
     font-size: 14px;
     line-height: 22px;
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 3px;
+
+    & + p {
+      margin-top: 10px;
+      }
+    }
+
+    @include vp-767 {
+      margin: 0;
+      padding-right: 10px;
+    }
   }
 
   cite {
@@ -46,11 +154,26 @@
     flex-wrap: wrap;
     gap: 8px;
     font-style: normal;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+    @include vp-1199 {
+      margin-top: 26px;
+      margin-bottom: 0;
+    }
+
+    @include vp-767 {
+      margin-top: 16px;
+    }
 
     b {
       font-size: 13px;
       line-height: 1;
       font-weight: 700;
+
+      @include vp-767 {
+        font-size: 12px;
+      }
     }
 
     span {
@@ -64,4 +187,48 @@
 .reviews__image {
   width: 258px;
   height: 253px;
+  background-color: $color-navy-blue;
+
+  @include vp-1199 {
+    width: 186px;
+    height: 237px;
+  }
+
+  @include vp-1199 {
+    width: 186px;
+    height: 237px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    @include vp-1199 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include vp-767 {
+      object-fit: contain;
+    }
+  }
+}
+
+.reviews__buttons {
+  position: absolute;
+  top: -48px;
+  right: 0;
+
+  @include vp-1199 {
+    top: -36px;
+    right: 45px;
+  }
+
+  @include vp-767 {
+    top: -33px;
+    right: 15px;
+  }
 }
