@@ -936,7 +936,13 @@
           </div>
         </section>
         <section class="about" id="about" data-test="about">
-          <div class="about__clouds">
+          <div class="about__clouds-small">
+            <picture>
+              <source type="image/webp" srcset="img/content/clouds/clouds-about.webp 1x, img/content/clouds/clouds-about@2x.webp 2x">
+              <img src="img/content/clouds/clouds-about.png" srcset="img/content/clouds/clouds-about@2x.png 2x" width="840" height="280" alt="Облако." loading="lazy">
+            </picture>
+          </div>
+          <div class="about__clouds-big">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/clouds/expedition-desktop.webp 1x, img/content/clouds/expedition-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/content/clouds/expedition-tablet.webp 1x, img/content/clouds/expedition-tablet@2x.webp 2x">
@@ -946,21 +952,23 @@
               <img src="img/content/clouds/expedition-mobile.png" srcset="img/content/clouds/expedition-mobile@2x.png 2x" width="434" height="400" alt="Поход в горах." loading="lazy">
             </picture>
           </div>
-          <div class="about__wrapper section-title">
-            <h2 data-parent="О нас">О нас</h2>
-            <ul class="about__content">
-              <li>
-                <h3>История компании</h3>
-                <p>В&nbsp;далёком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;— походы, поездки, восхождения, нам&nbsp;это&nbsp;настолько понравилось, что&nbsp;мы&nbsp;этим стали жить. Спустя&nbsp;5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы&nbsp;показывать людям удивительные места нашей страны.</p>
-              </li>
-              <li>
-                <h3>Наша цель</h3>
-                <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берём на&nbsp;себя<br> все организационные вопросы. При&nbsp;организации мы&nbsp;обязательно учтём все&nbsp;ваши пожелания. Вам&nbsp;останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
-              </li>
-            </ul>
+          <div class="about__container container">
+            <div class="about__wrapper section-title">
+              <h2 data-parent="О нас">О нас</h2>
+              <ul class="about__content">
+                <li>
+                  <h3>История компании</h3>
+                  <p>В&nbsp;далёком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;— походы, поездки, восхождения, нам&nbsp;это&nbsp;настолько понравилось, что&nbsp;мы&nbsp;этим стали жить. Спустя&nbsp;5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы&nbsp;показывать людям удивительные места нашей страны.</p>
+                </li>
+                <li>
+                  <h3>Наша цель</h3>
+                  <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берём на&nbsp;себя<br> все организационные вопросы. При&nbsp;организации мы&nbsp;обязательно учтём все&nbsp;ваши пожелания. Вам&nbsp;останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
-        <section class="reviews section-title container" id="reviews" data-test="reviews">
+        <!-- <section class="reviews section-title container" id="reviews" data-test="reviews">
           <h2 data-parent="Отзывы">Отзывы</h2>
             <div class="reviews__slider swiper" data-reviews-slider="data-reviews-slider">
               <ol class="reviews__list swiper-wrapper">
@@ -1004,7 +1012,7 @@
                 </svg>
               </button>
             </div>
-        </section>
+        </section> -->
       </main>
       <footer>
       </footer>
