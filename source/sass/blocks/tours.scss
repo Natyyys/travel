@@ -19,13 +19,13 @@
 }
 
 .tours__wrapper {
-  max-width: 1440px;
+  // max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  // width: 100%;
 
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    max-width: 1136px;
-  }
+  // @media (min-width: 1200px) and (max-width: 1439px) {
+  //   max-width: 1136px;
+  // }
 }
 
 .tours__slider-wrapper {

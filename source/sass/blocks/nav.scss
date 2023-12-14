@@ -12,6 +12,14 @@
 
     &.is-opened {
       top: 0;
+
+      @include vp-1199 {
+        padding: 99px 45px 53px 38px;
+      }
+      
+      @include vp-767 {
+        padding: 100px 45px 3px 8px;
+      }
     }
   }
 
@@ -21,6 +29,19 @@
 }
 
 .nav.is-opened {
+  max-width: 100%;
+  height: auto;
+  
+  ul {
+    @include vp-767 {
+      gap: 12px 0;
+    }
+
+    li {
+      padding: 0;
+    }
+  }
+
   a:hover {
     color: $color-elephant;
     border-bottom: 1px solid $color-elephant;
@@ -61,8 +82,8 @@
     gap: 18px 0;
 
     max-width: 100%;
-    height: calc(100vh - 110px);
-    max-height: 256px;
+    height: auto;
+    // max-height: 256px;
     margin: 0;
     padding: 10px 0 12px 2px;
     overflow: auto;
@@ -86,6 +107,11 @@
     text-transform: uppercase;
     letter-spacing: 0.64px;
     margin: 0;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    letter-spacing: 0.56px;
   }
 
   &:hover {

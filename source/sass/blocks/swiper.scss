@@ -73,18 +73,14 @@
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  right: -7px;
-  width: 1200px;
+  max-width: 1440px;
+  padding: 0 120px;
   margin: 0 auto;
 
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    max-width: 1136px;
-  }
-
   @include vp-1199 {
-    max-width: 100%;
-    right: 50%;
-    transform: translateX(-44.9%);
+    max-width: min-content;
+    padding: 0 45px;
+    align-items: center;
   }
 
   @include vp-767 {
