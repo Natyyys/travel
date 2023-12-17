@@ -1284,6 +1284,37 @@
             </div>
           </div>
         </section>
+        <section class="feedback" data-test="form">
+          <div class="feedback__background">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" width="1440" height="760" srcset="img/content/form/form-desktop.webp 1x, img/content/form/form-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" width="1024" height="680" srcset="img/content/form/form-tablet-1024.webp 1x, img/content/form/form-tablet-1024@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" width="768" height="680" srcset="img/content/form/form-tablet-768.webp 1x, img/content/form/form-tablet-768@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" width="159" height="260" srcset="img/content/form/form-mobile.webp 1x, img/content/form/form-mobile@2x.webp 2x">
+              <source type="image/jpg" media="(min-width: 1200px)" width="1440" height="760" srcset="img/content/form/form-desktop.jpg, img/content/form/form-desktop@2x.jpg 2x">
+              <source type="image/jpg" media="(min-width: 1024px)" width="1024" height="680" srcset="img/content/form/form-tablet-1024.jpg, img/content/form/form-tablet-1024@2x.jpg 2x">
+              <source type="image/jpg" media="(min-width: 768px)" width="768" height="680" srcset="img/content/form/form-tablet-768.jpg, img/content/form/form-tablet-768@2x.jpg 2x">
+              <img src="img/content/form/form-mobile.jpg" srcset="img/content/form/form-mobile@2x.jpg 2x" width="350" height="522" alt="Зимний лес в тумане." loading="lazy">
+            </picture>
+          </div>
+          <div class="feedback__wrapper" data-form-validate data-callback="base">
+            <h2>Остались вопросы?</h2>
+            <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+            <div class="feedback__form form">
+              <form action="https://echo.htmlacademy.ru/" method="post" novalidate>
+                <div class="form__phone" data-validate-type="phone" data-on-input-validate data-required data-phone-length="11">
+                  <label class="visually-hidden" for="phone">Телефон:</label>
+                  <input placeholder="Телефон" id="phone" type="tel" name="user-phone" aria-invalid="true" required>
+                </div>
+                <div class="form__email" data-validate-type="email" data-on-input-validate>
+                  <label class="visually-hidden" for="email">Телефон:</label>
+                  <input placeholder="Email" id="email" type="email" name="user-email" aria-invalid="true" required>
+                </div>                  
+                <button class="btn btn--primary" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
       </footer>
