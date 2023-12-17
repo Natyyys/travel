@@ -6,9 +6,12 @@
   flex-wrap: nowrap;
   gap: 47px;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include vp-1199 {
     padding-top: 105px;
+    padding-bottom: 40px;
   }
 
   @include vp-767 {
@@ -26,6 +29,13 @@
 
     @include vp-767 {
       font-size: 22px;
+    }
+  }
+
+  [data-parent] {
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -189,12 +199,5 @@
 
   @include vp-1199 {
    display: none;
-  }
-}
-
-[data-parent] {
-  &::before {
-    left: 50%;
-    transform: translateX(-50%);
   }
 }

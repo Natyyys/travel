@@ -1,0 +1,148 @@
+.gallery  {
+  padding-top: 23px;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-left: -1px;
+
+  @include vp-1199 {
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    padding-top: 7px;
+  }
+}
+
+.gallery__title {
+  @include vp-767 {
+    margin-bottom: 65px;
+  }
+
+  h2 {
+    margin-bottom: 24px;
+
+    @include vp-1199 {
+      margin-bottom: 17px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 14px;
+    }
+  }
+
+  p {
+    width: 693px;
+    margin: 0;
+
+     @include vp-1199 {
+      font-size: 14px;
+      line-height: 22px;
+      width: 420px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
+      width: 100%;
+      padding-right: 20px;
+    }
+  }
+}
+
+.gallery__swiper-wrapper {
+  margin-top: 45px;
+  margin-bottom: 2px;
+  position: relative;
+
+  @include vp-1199 {
+    margin-top: 21px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+}
+
+.gallery__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.gallery__buttons {
+  position: absolute;
+}
+
+.gallery__item {
+    &--first {
+      width: 276px;
+    }
+
+    &--secondary {
+      width: 298px;
+    }
+
+    &--third {
+      width: 272px;
+    }
+
+    @include vp-1199 {
+      width: calc((758 / 3) / 768 * 100%);
+      max-width: 338px;
+      min-width: calc(758px / 3);
+      height: 450px;
+    }
+
+    @include vp-767 {
+      width: calc((287 / 2) / 290 * 100%);
+      min-width: calc(287px / 2);
+      height: 260px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      background-color: $color-navy-blue;
+    }
+}
+
+.gallery__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+
+  @include vp-767 {
+    gap: 3px;
+  }
+}
+
+
+.gallery__buttons {
+  position: absolute;
+  right: 120px;
+  top: -88px;
+
+  @include vp-1199 {
+    right: 45px;
+    top: -56px;
+  }
+
+  @include vp-767 {
+    right: 15px;
+    top: -50px;
+  }
+}
+
+.gallery__button {
+  @include vp-1199 {
+    width: 34px;
+  }
+
+  @include vp-767 {
+    width: 37px;
+  }
+}

@@ -8,6 +8,7 @@ import {initToursSlider} from './modules/tours/tours-slider';
 import {initCoachesSlider} from './modules/coaches/coaches-slider';
 import {initReviewsSlider} from './modules/reviews/reviews-slider';
 import {initFeaturesSlider, handleResize} from './modules/features/features-slider';
+import {initGallerySlider} from './modules/gallery/gallery-slider';
 
 // ---------------------------------
 
@@ -36,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initReviewsSlider();
     initFeaturesSlider();
     handleResize();
+    initGallerySlider();
   });
 });
 
