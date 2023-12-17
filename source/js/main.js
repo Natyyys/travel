@@ -7,6 +7,7 @@ import {initSwiperHero} from './modules/hero/hero-slider';
 import {initToursSlider} from './modules/tours/tours-slider';
 import {initCoachesSlider} from './modules/coaches/coaches-slider';
 import {initReviewsSlider} from './modules/reviews/reviews-slider';
+import {initFeaturesSlider, handleResize} from './modules/features/features-slider';
 
 // ---------------------------------
 
@@ -33,6 +34,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initToursSlider();
     initCoachesSlider();
     initReviewsSlider();
+    initFeaturesSlider();
+    handleResize();
   });
 });
 
