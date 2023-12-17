@@ -191,3 +191,10 @@
    display: none;
   }
 }
+
+[data-parent] {
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
