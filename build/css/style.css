@@ -3881,6 +3881,11 @@ button,
     padding-bottom: 40px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .features {
+    padding-bottom: 46px;
+  }
+}
 @media (max-width: 767px) {
   .features {
     padding-top: 63px;
@@ -3910,6 +3915,11 @@ button,
 
 .features__swiper-wrapper {
   width: 100vw;
+}
+@media (max-width: 1199px) {
+  .features__swiper-wrapper {
+    width: 100%;
+  }
 }
 
 .features__slider {
@@ -4044,6 +4054,7 @@ button,
   .features__content p {
     font-size: 12px;
     line-height: 18px;
+    min-height: 90px;
   }
 }
 .features__content p + p {
