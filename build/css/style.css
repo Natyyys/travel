@@ -1275,6 +1275,7 @@ body {
   height: 100%;
   background-color: #ffffff;
   text-align: left;
+  min-width: 320px;
 }
 
 a {

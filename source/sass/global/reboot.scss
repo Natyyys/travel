@@ -29,6 +29,7 @@ body {
   height: 100%;
   background-color: $color-default-white;
   text-align: left;
+  min-width: $vp-320;
 }
 
 a {
