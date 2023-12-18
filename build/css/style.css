@@ -1489,6 +1489,7 @@ button,
 }
 .btn--primary {
   padding: 21px 20px 19px 20px;
+  min-width: 180px;
 }
 .btn--primary:hover, .btn--primary:focus, .btn--primary:focus-visible {
   padding: 20px 19px 18px 19px;
@@ -2095,10 +2096,6 @@ button,
   .hero__button-wrapper {
     margin-top: 20px;
   }
-}
-
-.hero__button {
-  min-width: 180px;
 }
 
 .hero__info {
