@@ -1298,19 +1298,21 @@
             </picture>
           </div>
           <div class="feedback__wrapper" data-form-validate data-callback="base">
-            <h2>Остались вопросы?</h2>
-            <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
-            <div class="feedback__form form">
-              <form action="https://echo.htmlacademy.ru/" method="post" novalidate>
-                <div class="form__phone" data-validate-type="phone" data-on-input-validate data-required data-phone-length="11">
-                  <label class="visually-hidden" for="phone">Телефон:</label>
-                  <input placeholder="Телефон" id="phone" type="tel" name="user-phone" aria-invalid="true" required>
+            <div class="feedback__title">
+              <h2>Остались вопросы?</h2>
+              <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+            </div>
+            <div class="form">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="form__input" data-validate-type="phone" data-on-input-validate>
+                  <label for="phone" aria-label="Введите ваш номер телефона."></label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" autocomplete="off" data-required="data-required">
                 </div>
-                <div class="form__email" data-validate-type="email" data-on-input-validate>
-                  <label class="visually-hidden" for="email">Телефон:</label>
-                  <input placeholder="Email" id="email" type="email" name="user-email" aria-invalid="true" required>
+                <div class="form__input" data-validate-type="email" data-on-input-validate>
+                  <label for="email" aria-label="Введите ваш email."></label>
+                  <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" data-required="data-required">
                 </div>                  
-                <button class="btn btn--primary" type="submit">Отправить</button>
+                <button class="feedback__button btn btn--primary" type="submit">Отправить</button>
               </form>
             </div>
           </div>

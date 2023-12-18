@@ -4266,6 +4266,273 @@ button,
   }
 }
 
+.feedback {
+  position: relative;
+  min-height: 760px;
+}
+@media (max-width: 1199px) {
+  .feedback {
+    min-height: 680px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback {
+    min-height: 620px;
+  }
+}
+
+.feedback__background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #999999;
+}
+.feedback__background img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.feedback__wrapper {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 38px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .feedback__wrapper {
+    padding: 40px 45px;
+    gap: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback__wrapper {
+    padding: 25px 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+}
+
+.feedback__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 18px;
+  text-align: center;
+  margin-top: 256px;
+}
+@media (max-width: 1199px) {
+  .feedback__title {
+    width: 295px;
+    margin-top: 150px;
+    gap: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback__title {
+    width: 290px;
+    gap: 19px;
+  }
+}
+.feedback__title h2 {
+  margin: 0;
+  font-size: 35px;
+  line-height: 1;
+  font-weight: 800;
+}
+@media (max-width: 1199px) {
+  .feedback__title h2 {
+    font-size: 25px;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback__title h2 {
+    font-size: 22px;
+  }
+}
+.feedback__title p {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .feedback__title p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.form {
+  max-width: 960px;
+}
+@media (max-width: 1199px) {
+  .form {
+    width: 271px;
+  }
+}
+@media (max-width: 767px) {
+  .form {
+    width: 290px;
+  }
+}
+.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 1199px) {
+  .form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .form form {
+    gap: 8px;
+  }
+}
+
+.form__input input {
+  width: 360px;
+  height: 56px;
+  padding: 20px 29px;
+  background-color: #ffffff;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  border-radius: 2px;
+}
+@media (max-width: 1199px) {
+  .form__input input {
+    width: 100%;
+    height: 50px;
+    padding: 17px 15px;
+    border-radius: 0;
+  }
+}
+.form__input input::-webkit-input-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  line-height: 16px;
+}
+.form__input input::-moz-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  line-height: 16px;
+}
+.form__input input:-ms-input-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  line-height: 16px;
+}
+.form__input input::-ms-input-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  line-height: 16px;
+}
+.form__input input::placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  line-height: 16px;
+}
+.form__input input:hover {
+  border-color: #0266c1;
+}
+.form__input input:hover::-webkit-input-placeholder {
+  color: #0266c1;
+}
+.form__input input:hover::-moz-placeholder {
+  color: #0266c1;
+}
+.form__input input:hover:-ms-input-placeholder {
+  color: #0266c1;
+}
+.form__input input:hover::-ms-input-placeholder {
+  color: #0266c1;
+}
+.form__input input:hover::placeholder {
+  color: #0266c1;
+}
+.form__input input:focus, .form__input input:focus-visible, .form__input input:active {
+  border-color: #1c3374;
+  outline: none;
+}
+.form__input input:focus::-webkit-input-placeholder, .form__input input:focus-visible::-webkit-input-placeholder, .form__input input:active::-webkit-input-placeholder {
+  color: transparent;
+}
+.form__input input:focus::-moz-placeholder, .form__input input:focus-visible::-moz-placeholder, .form__input input:active::-moz-placeholder {
+  color: transparent;
+}
+.form__input input:focus:-ms-input-placeholder, .form__input input:focus-visible:-ms-input-placeholder, .form__input input:active:-ms-input-placeholder {
+  color: transparent;
+}
+.form__input input:focus::-ms-input-placeholder, .form__input input:focus-visible::-ms-input-placeholder, .form__input input:active::-ms-input-placeholder {
+  color: transparent;
+}
+.form__input input:focus::placeholder, .form__input input:focus-visible::placeholder, .form__input input:active::placeholder {
+  color: transparent;
+}
+.form__input input:disabled, .form__input input--disabled {
+  border-color: rgba(2, 102, 193, 0.1);
+}
+.form__input input:disabled::-webkit-input-placeholder, .form__input input--disabled::-webkit-input-placeholder {
+  color: rgba(2, 102, 193, 0.5);
+}
+.form__input input:disabled::-moz-placeholder, .form__input input--disabled::-moz-placeholder {
+  color: rgba(2, 102, 193, 0.5);
+}
+.form__input input:disabled:-ms-input-placeholder, .form__input input--disabled:-ms-input-placeholder {
+  color: rgba(2, 102, 193, 0.5);
+}
+.form__input input:disabled::-ms-input-placeholder, .form__input input--disabled::-ms-input-placeholder {
+  color: rgba(2, 102, 193, 0.5);
+}
+.form__input input:disabled::placeholder, .form__input input--disabled::placeholder {
+  color: rgba(2, 102, 193, 0.5);
+}
+
+@media (max-width: 767px) {
+  .feedback__button {
+    padding: 21px;
+  }
+}
+
+.form__input.is-invalid input {
+  border-color: #ff121f;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
