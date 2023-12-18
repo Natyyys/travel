@@ -3379,6 +3379,11 @@ button,
     padding-bottom: 0;
   }
 }
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .about {
+    margin-bottom: 198px;
+  }
+}
 
 .about__container {
   max-width: 1440px;
@@ -3406,6 +3411,14 @@ button,
     width: min-content;
     min-width: 39.8230088496%;
     gap: 35px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .about__wrapper {
+    width: 526px;
+  }
+  .about__wrapper br {
+    display: none;
   }
 }
 @media (max-width: 767px) {

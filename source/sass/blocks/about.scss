@@ -7,6 +7,10 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  @media (min-width: 1024px) and (max-width: 1024px) {
+    margin-bottom: 198px;
+  }
 }
 
 .about__container {
@@ -26,6 +30,13 @@
     width: min-content;
     min-width: calc(270 / 678 * 100%);
     gap: 35px;
+  }
+  @media (min-width: 1024px) and (max-width: 1024px)  {
+    width: 526px;
+
+    br {
+      display: none;
+    }
   }
 
   @include vp-767  {
