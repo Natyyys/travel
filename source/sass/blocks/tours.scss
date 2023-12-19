@@ -7,13 +7,17 @@
   }
 
   @include vp-767 {
-    overflow: hidden;
+    // overflow: hidden;
     padding: 56px 0 20px;
   }
 
   h2 {
     @media (min-width: 768px) and (max-width: 1199px) {
       font-size: 35px;
+    }
+
+    @include vp-767 {
+      padding: 0;
     }
   }
 }
@@ -263,7 +267,7 @@
   z-index: -10;
 
   @include vp-767 {
-    top: 26%;
+    top: 110px;
   }
 
   img {

@@ -15,17 +15,17 @@ const initGallerySlider = () => {
     breakpoints: {
       320: {
         slidesPerView: 'auto',
-        spaceBetween: 3,
+        // spaceBetween: 3,
         allowTouchMove: true,
       },
       768: {
         slidesPerView: 'auto',
-        spaceBetween: 5,
+        // spaceBetween: 5,
         allowTouchMove: true,
       },
       1200: {
         slidesPerView: 'auto',
-        spaceBetween: 5,
+        // spaceBetween: 5,
         allowTouchMove: false,
       },
     },
