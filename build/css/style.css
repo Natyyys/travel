@@ -2494,7 +2494,7 @@ button,
 }
 
 .tours {
-  padding: 123px 0 77px;
+  padding: 123px 0 100px;
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -2555,7 +2555,6 @@ button,
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 30px 20px;
-  margin-right: 30px;
 }
 @media (max-width: 1199px) {
   .tours__item {
@@ -2591,7 +2590,7 @@ button,
   line-height: 28px;
   font-weight: 700;
   padding-right: 100px;
-  margin: 1px 0 -1px;
+  margin: 1px 0 -2px;
 }
 @media (max-width: 1199px) {
   .tours__content h3 {
@@ -2636,11 +2635,11 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-column-gap: 7px;
-     -moz-column-gap: 7px;
-          column-gap: 7px;
+  -webkit-column-gap: 6px;
+     -moz-column-gap: 6px;
+          column-gap: 6px;
   background-color: #0266c1;
-  padding: 6px 12px;
+  padding: 6px 13px 6px 12px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2654,9 +2653,9 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-column-gap: 14px;
-     -moz-column-gap: 14px;
-          column-gap: 14px;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
   padding: 0;
 }
 .tours__days li {
@@ -2692,6 +2691,9 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .tours__details tr {
   display: -webkit-box;
@@ -2704,7 +2706,6 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 8px;
-  margin-right: 6px;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -2713,7 +2714,7 @@ button,
   row-gap: 4px;
 }
 .tours__details td {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1;
   font-weight: 700;
   padding: 0;
@@ -2728,6 +2729,7 @@ button,
 }
 .tours__details td:first-child {
   font-weight: 300;
+  font-size: 12px;
 }
 
 .tours__background {
@@ -2865,7 +2867,7 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 60px;
-  padding-top: 65px;
+  padding-top: 42px;
   padding-bottom: 65px;
 }
 @media (max-width: 1199px) {

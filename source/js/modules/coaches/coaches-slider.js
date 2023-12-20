@@ -20,6 +20,7 @@ const initCoachesSlider = () => {
       },
       768: {
         slidesPerView: 3,
+        initialSlide: 4,
         spaceBetween: 20,
         allowTouchMove: true,
       },
