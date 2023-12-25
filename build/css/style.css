@@ -2494,17 +2494,17 @@ button,
 }
 
 .tours {
-  padding: 123px 0 100px;
+  padding: 123px 0 99px;
   position: relative;
 }
 @media (max-width: 1199px) {
   .tours {
-    padding: 68px 0 45px;
+    padding: 68px 0 44px;
   }
 }
 @media (max-width: 767px) {
   .tours {
-    padding: 56px 0 20px;
+    padding: 56px 0 19px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -2806,6 +2806,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  color: #2d383f;
 }
 @media (max-width: 1199px) {
   .tours__more a {
@@ -2867,18 +2868,19 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 60px;
-  padding-top: 42px;
-  padding-bottom: 65px;
+  padding-top: 43px;
+  padding-bottom: 0;
 }
 @media (max-width: 1199px) {
   .training__wrapper {
-    padding-top: 62px;
+    padding-top: 63px;
     row-gap: 29px;
+    padding-bottom: 47px;
   }
 }
 @media (max-width: 767px) {
   .training__wrapper {
-    padding-top: 26px;
+    padding-top: 27px;
     row-gap: 28px;
     padding-bottom: 21px;
   }
@@ -3001,7 +3003,7 @@ button,
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 15px;
+  gap: 14px;
 }
 .coaches__content h4 {
   margin: 0;
@@ -3009,6 +3011,7 @@ button,
   line-height: 16px;
   font-weight: 700;
   padding-right: 26px;
+  padding-top: 2px;
 }
 .coaches__content p {
   margin: 0;
@@ -3053,7 +3056,8 @@ button,
   width: 24px;
   height: 24px;
   border: 1px solid rgba(45, 56, 63, 0.3);
-  padding: 8px 5px;
+  padding: 7px 4px;
+  margin-top: 1px;
   fill: #2d383f;
 }
 .coaches__social a:hover, .coaches__social a:focus-within, .coaches__social a:focus-visible {
@@ -3224,7 +3228,7 @@ button,
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  margin-bottom: 33px;
+  margin-bottom: 24px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -3391,19 +3395,25 @@ button,
 }
 
 .about {
-  padding-top: 5px;
+  padding-top: 79px;
   padding-bottom: 81px;
   position: relative;
 }
 @media (max-width: 1199px) {
   .about {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 18px;
+    padding-bottom: 2px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1024px) {
   .about {
     margin-bottom: 198px;
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    padding-top: 0;
+    padding-bottom: 1px;
   }
 }
 
@@ -3562,7 +3572,7 @@ button,
 }
 @media (max-width: 1439px) {
   .about__clouds-big {
-    top: 42px;
+    top: 60px;
   }
 }
 @media (max-width: 767px) {
@@ -3594,7 +3604,7 @@ button,
 
 .about__clouds-small {
   position: absolute;
-  top: -185px;
+  top: -109px;
   right: -220px;
   z-index: -1;
 }
@@ -3621,12 +3631,14 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews {
-    padding-top: 57px;
+    padding-top: 55px;
+    padding-bottom: 37px;
   }
 }
 @media (max-width: 767px) {
   .reviews {
-    padding-top: 42px;
+    padding-top: 41px;
+    padding-bottom: 15px;
   }
 }
 @media (max-width: 1199px) {
@@ -3902,8 +3914,8 @@ button,
 }
 @media (max-width: 1199px) {
   .features {
-    padding-top: 105px;
-    padding-bottom: 40px;
+    padding-top: 68px;
+    padding-bottom: 45px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1024px) {
@@ -3913,7 +3925,8 @@ button,
 }
 @media (max-width: 767px) {
   .features {
-    padding-top: 63px;
+    padding-top: 48px;
+    padding-bottom: 40px;
     gap: 19px;
   }
 }
@@ -4134,6 +4147,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gallery {
+    padding-top: 18px;
     padding-bottom: 0;
   }
 }
