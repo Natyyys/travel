@@ -2262,7 +2262,7 @@ button,
 .swiper .hero__pagination {
   position: absolute;
   bottom: 97px;
-  right: 0;
+  right: -7px;
   z-index: 5;
   cursor: pointer;
   display: -webkit-box;
