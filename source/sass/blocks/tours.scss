@@ -196,7 +196,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    
+
     @include vp-1199 {
       aspect-ratio: 100;
     }

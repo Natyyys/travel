@@ -123,7 +123,6 @@
   text-align: center;
   gap: 15px;
 
-  
   @include vp-1199 {
     padding: 29px 19px;
     gap: 14px;
@@ -133,7 +132,6 @@
     padding: 19px 9px;
     gap: 15px;
   }
-  
 
   h3 {
     margin: 0;
@@ -200,7 +198,7 @@
     @include vp-1199 {
       width: 24px;
       height: 24px;
-     }
+    }
   }
 }
 
@@ -208,6 +206,6 @@
   margin-top: 3px;
 
   @include vp-1199 {
-   display: none;
+    display: none;
   }
 }

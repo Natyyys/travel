@@ -12,7 +12,7 @@
   @include vp-767 {
     gap: 23px;
   }
-  
+
   h3 {
     @include vp-1199 {
       font-size: 18px;
@@ -158,7 +158,7 @@
         top: 15px;
       }
     }
-  
+
     &:last-child {
       @media (min-width: 1200px) {
         &::after {

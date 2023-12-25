@@ -42,7 +42,7 @@
 .footer__logo {
   padding: 0 0 0 29px;
   height: 42px;
-  
+
   @include vp-1199 {
     padding: 0;
     height: 42px;
@@ -166,11 +166,11 @@
     color: $color-resolution-blue;
     outline: none;
   }
-    
+
   &:active {
     color: $color-navy-blue;
   }
-    
+
   &:disabled,
   &--disabled {
     color: $color-navy-blue;
@@ -219,19 +219,19 @@
     border-color: $color-elephant;
     outline: none;
   }
-    
+
   &:active {
     background-color: $color-navy-blue;
     border-color: $color-navy-blue;
     fill: $color-default-white;
   }
-    
+
   &:disabled,
   &--disabled {
     border: 1px solid $color-elephant-30;
     pointer-events: none;
     cursor: default;
-    
+
     svg {
       color: $color-elephant-30;
     }

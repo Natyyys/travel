@@ -16,7 +16,7 @@
       @include vp-1199 {
         padding: 99px 45px 53px 38px;
       }
-      
+
       @include vp-767 {
         padding: 100px 45px 3px 8px;
       }
@@ -31,7 +31,7 @@
 .nav.is-opened {
   max-width: 100%;
   height: auto;
-  
+
   ul {
     @include vp-767 {
       gap: 12px 0;
