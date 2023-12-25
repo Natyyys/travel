@@ -50,7 +50,7 @@
 }
 
 @mixin vp-320 {
-  @media (min-width: ($vp-320)) {
+  @media (max-width: ($vp-320)) {
     @content;
   }
 }

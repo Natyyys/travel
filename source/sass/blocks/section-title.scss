@@ -27,5 +27,15 @@
     color: $color-elephant-3;
     content: attr(data-parent);
     white-space: nowrap;
+
+    @include vp-1199 {
+      font-size: 40px;
+      top: -12px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      top: -3px;
+    }
   }
 }

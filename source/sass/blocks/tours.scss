@@ -20,6 +20,18 @@
       padding: 0;
     }
   }
+
+  [data-parent] {
+    &::before {
+      font-size: 55px;
+      top: -17px;
+
+      @include vp-767 {
+        top: -27px;
+      }
+    }
+  }
+  
 }
 
 .tours__wrapper {

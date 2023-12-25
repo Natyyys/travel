@@ -186,6 +186,26 @@
   }
 }
 
+.contacts__link {
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-navy-blue;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
 .contacts__map {
   position: relative;
 }

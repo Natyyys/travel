@@ -8,6 +8,7 @@
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
 
   @include vp-1199 {
     padding-top: 68px;
@@ -41,6 +42,15 @@
     &::before {
       left: 50%;
       transform: translateX(-50%);
+
+      @include vp-1199 {
+        font-size: 40px;
+        top: -3px;
+      }
+
+      @include vp-767 {
+        font-size: 26px;
+      }
     }
   }
 }
@@ -85,6 +95,8 @@
   width: calc(380 / 1200 * 100%);
   height: auto;
   border: 1px solid $color-navy-blue-10;
+  background-color: $color-default-white;
+  z-index: 3;
 
   @include vp-1199 {
     max-width: unset;
@@ -216,6 +228,38 @@
   margin-top: 3px;
 
   @include vp-1199 {
+    display: none;
+  }
+}
+
+.features__clouds-left {
+  position: absolute;
+  top: -125px;
+  left: -325px;
+  z-index: -2;
+
+  @include vp-1199 {
+    top: 215px;
+    left: -445px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.features__clouds-right {
+  position: absolute;
+  top: 60px;
+  right: -325px;
+  z-index: -2;
+
+  @include vp-1199 {
+    top: 715px;
+    right: -233px;
+  }
+
+  @include vp-767 {
     display: none;
   }
 }
