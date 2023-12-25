@@ -3,7 +3,7 @@ import {showButton, showCover} from './videoplayer';
 import {showAudioButton, showAudioCover} from './audioplayer';
 
 const initSwiperHero = () => {
-  let swiper = new Swiper('.hero__slider', {
+  const swiper = new Swiper('.hero__slider', {
     speed: 500,
     loop: false,
     pagination: {

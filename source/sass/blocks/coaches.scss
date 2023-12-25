@@ -5,7 +5,6 @@
   flex-wrap: wrap;
   gap: 18px;
   position: relative;
-  // padding-top: 4px;
 
   @include vp-1199 {
     gap: 28px;
@@ -62,9 +61,9 @@
 }
 
 .coaches__name {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .coaches__social {

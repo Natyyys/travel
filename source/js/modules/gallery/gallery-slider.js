@@ -5,7 +5,7 @@ const buttonNext = document.querySelector('[data-gallery-prev]');
 const buttonPrev = document.querySelector('[data-gallery-next]');
 
 const initGallerySlider = () => {
-  let swiper = new Swiper(gallerySlider, {
+  const swiper = new Swiper(gallerySlider, {
     loop: true,
 
     navigation: {

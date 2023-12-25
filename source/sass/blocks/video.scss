@@ -13,7 +13,6 @@
 .video__button {
   position: absolute;
   padding: 0;
-  position: absolute;
   content: "";
   width: 56px;
   height: 56px;
@@ -75,7 +74,7 @@
   }
 
   &:disabled svg,
-  &--disabled svg  {
+  &--disabled svg {
     color: $color-navy-blue;
     outline: 0;
   }

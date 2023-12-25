@@ -97,34 +97,34 @@
   }
 
   a {
-  color: $color-elephant;
+    color: $color-elephant;
 
-  @include vp-1199 {
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 0.1px;
-  }
+    @include vp-1199 {
+      font-size: 14px;
+      line-height: 1;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0.1px;
+    }
 
-  @include vp-767 {
-    letter-spacing: 0;
-  }
+    @include vp-767 {
+      letter-spacing: 0;
+    }
 
-  &:hover {
-    border-bottom: 1px solid $color-elephant;
-  }
+    &:hover {
+      border-bottom: 1px solid $color-elephant;
+    }
 
-  &:focus,
-  &:focus-visible {
-    outline: 1px solid $color-elephant;
-  }
+    &:focus,
+    &:focus-visible {
+      outline: 1px solid $color-elephant;
+    }
 
-  &:disabled,
-  &--disabled {
-    pointer-events: none;
-    cursor: default;
-  }
+    &:disabled,
+    &--disabled {
+      pointer-events: none;
+      cursor: default;
+    }
   }
 }
 

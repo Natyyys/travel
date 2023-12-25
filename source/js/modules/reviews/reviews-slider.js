@@ -5,7 +5,7 @@ const buttonNext = document.querySelector('[data-reviews-prev]');
 const buttonPrev = document.querySelector('[data-reviews-next]');
 
 const initReviewsSlider = () => {
-  let swiper = new Swiper(reviewsSlider, {
+  const swiper = new Swiper(reviewsSlider, {
     loop: true,
 
     navigation: {
