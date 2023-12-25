@@ -1323,15 +1323,15 @@
               <h2>Остались вопросы?</h2>
               <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
             </div>
-            <div class="form">
+            <div class="form" data-feedback-form>
               <form action="https://echo.htmlacademy.ru/" method="post">
-                <div class="form__input" data-validate-type="phone" data-on-input-validate>
+                <div class="form__input" data-validate-type="phone" data-required="data-required">
                   <label for="phone" aria-label="Введите ваш номер телефона."></label>
-                  <input type="tel" name="phone" id="phone" placeholder="Телефон" autocomplete="off" data-required="data-required">
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" autocomplete="off">
                 </div>
-                <div class="form__input" data-validate-type="email" data-on-input-validate>
+                <div class="form__input" data-validate-type="email" data-required="data-required">
                   <label for="email" aria-label="Введите ваш email."></label>
-                  <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" data-required="data-required">
+                  <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
                 </div>
                 <button class="feedback__button btn btn--primary" type="submit">Отправить</button>
               </form>
