@@ -2483,11 +2483,12 @@ button,
   font-weight: 800;
   line-height: 1;
   position: relative;
-  padding-right: 15%;
+  padding-right: 50%;
 }
 @media (max-width: 1199px) {
   .section-title h2 {
     font-size: 25px;
+    padding-right: 15%;
   }
 }
 @media (max-width: 767px) {
@@ -3008,6 +3009,11 @@ button,
 }
 .coaches h3 {
   min-height: 55px;
+}
+@media (max-width: 767px) {
+  .coaches h3 {
+    padding-right: 20%;
+  }
 }
 
 .coaches__slider {
