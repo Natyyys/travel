@@ -1774,19 +1774,6 @@ button,
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
-  .nav.is-opened {
-    top: 0;
-  }
-}
-@media (max-width: 1199px) and (max-width: 1199px) {
-  .nav.is-opened {
-    padding: 99px 45px 53px 38px;
-  }
-}
-@media (max-width: 1199px) and (max-width: 767px) {
-  .nav.is-opened {
-    padding: 100px 45px 3px 8px;
-  }
 }
 @media (max-width: 767px) {
   .nav {
@@ -1797,6 +1784,17 @@ button,
 .nav.is-opened {
   max-width: 100%;
   height: auto;
+  top: 0;
+}
+@media (max-width: 1199px) {
+  .nav.is-opened {
+    padding: 99px 45px 53px 38px;
+  }
+}
+@media (max-width: 767px) {
+  .nav.is-opened {
+    padding: 100px 45px 3px 8px;
+  }
 }
 @media (max-width: 767px) {
   .nav.is-opened ul {
@@ -1928,7 +1926,7 @@ button,
   z-index: 2;
   min-height: 799px;
   height: auto;
-  padding: 107px 0 0 0;
+  padding: 107px 0 0;
 }
 @media (max-width: 767px) {
   .hero__item {
@@ -2060,13 +2058,8 @@ button,
   .hero__text p {
     font-size: 15px;
     line-height: 20px;
-    padding: 0 30px;
-    min-height: 100px;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .hero__text p {
     padding: 0 15px;
+    min-height: 100px;
   }
 }
 @media (max-width: 320px) {
@@ -2097,11 +2090,6 @@ button,
 }
 @media (max-width: 767px) {
   .hero__button-wrapper {
-    margin-top: 60px;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .hero__button-wrapper {
     margin-top: 20px;
   }
 }
@@ -2119,21 +2107,13 @@ button,
 .hero__info-item {
   font-size: 12px;
   line-height: 16px;
-  padding: 13px 19px 13px;
+  padding: 13px 19px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
 }
-.hero__info-item span {
-  font-style: normal;
-  font-size: 12px;
-  line-height: 16px;
-  color: #ffffff;
-  text-align: start;
-}
-
 @media (max-width: 1199px) {
   .hero__info-item {
     display: none;
@@ -2144,6 +2124,13 @@ button,
 }
 .hero__info-item:last-child {
   padding-right: 20px;
+}
+.hero__info-item span {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: start;
 }
 
 .hero__video {

@@ -9,18 +9,6 @@
     padding: 100px 38px 52px;
     background-color: $color-default-white;
     transition: all 0.3s linear;
-
-    &.is-opened {
-      top: 0;
-
-      @include vp-1199 {
-        padding: 99px 45px 53px 38px;
-      }
-
-      @include vp-767 {
-        padding: 100px 45px 3px 8px;
-      }
-    }
   }
 
   @include vp-767 {
@@ -31,6 +19,15 @@
 .nav.is-opened {
   max-width: 100%;
   height: auto;
+  top: 0;
+
+  @include vp-1199 {
+    padding: 99px 45px 53px 38px;
+  }
+
+  @include vp-767 {
+    padding: 100px 45px 3px 8px;
+  }
 
   ul {
     @include vp-767 {
@@ -71,7 +68,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  // margin-top: 2px;
   column-gap: 1px;
   row-gap: 2px;
 
@@ -83,7 +79,6 @@
 
     max-width: 100%;
     height: auto;
-    // max-height: 256px;
     margin: 0;
     padding: 10px 0 12px 2px;
     overflow: auto;
