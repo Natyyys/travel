@@ -9,6 +9,7 @@ import {initCoachesSlider} from './modules/coaches/coaches-slider';
 import {initReviewsSlider} from './modules/reviews/reviews-slider';
 import {initFeaturesSlider, handleResize} from './modules/features/features-slider';
 import {initGallerySlider} from './modules/gallery/gallery-slider';
+import {requiredInput} from './modules/required-form';
 
 // ---------------------------------
 
@@ -22,6 +23,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  initVideoPlayer();
+  initAudioPlayer();
+  initSwiperHero();
+  initToursSlider();
+  initCoachesSlider();
+  initReviewsSlider();
+  initFeaturesSlider();
+  handleResize();
+  initGallerySlider();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
@@ -29,15 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    initVideoPlayer();
-    initAudioPlayer();
-    initSwiperHero();
-    initToursSlider();
-    initCoachesSlider();
-    initReviewsSlider();
-    initFeaturesSlider();
-    handleResize();
-    initGallerySlider();
+    requiredInput();
   });
 });
 

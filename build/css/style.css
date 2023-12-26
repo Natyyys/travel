@@ -1608,6 +1608,7 @@ button,
     justify-items: end;
   }
 }
+
 @media (max-width: 1199px) {
   .header__wrapper.is-opened {
     padding: 20px 55px;
@@ -1645,12 +1646,14 @@ button,
 .header__toggle {
   border: none;
   background-color: transparent;
+  display: none;
 }
 @media (max-width: 1199px) {
   .header__toggle {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    display: block;
   }
 }
 
@@ -1687,12 +1690,6 @@ button,
 .header__logo:disabled, .header__logo--disabled {
   pointer-events: none;
   cursor: default;
-}
-
-@media (min-width: 1200px) {
-  .header__toggle {
-    display: none;
-  }
 }
 
 .header__contacts {
@@ -4585,6 +4582,29 @@ button,
   }
 }
 
+.form__input {
+  position: relative;
+}
+.form__input .input-message {
+  position: absolute;
+  bottom: -5px;
+  color: #ff121f;
+  width: 100%;
+  left: 55%;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .form__input .input-message {
+    left: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .form__input .input-message {
+    left: 45%;
+  }
+}
 .form__input input {
   width: 360px;
   height: 56px;
@@ -5298,40 +5318,3 @@ button,
   line-height: 1;
   font-weight: 300;
 }
-
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
