@@ -62,11 +62,11 @@
     padding-right: calc(380 / 1200 * 100%);
     margin: 0;
 
-    @media (min-width: 1024px) and (max-width: 1199px){
+    @include vp-1199 {
       padding-right: 38%;
     }
 
-    @media (min-width: 768px) and (max-width: 1023px){
+    @include vp-1023 {
       padding-right: 22%;
     }
 

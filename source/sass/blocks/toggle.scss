@@ -14,16 +14,15 @@
     border: none;
     outline: none;
     cursor: pointer;
-
-    &.is-opened {
-      padding: 0;
-    }
   }
 
   @include vp-767 {
     margin-top: -16px;
   }
+}
 
+.toggle.is-opened {
+  padding: 0;
 }
 
 .toggle .toggle__closed {
