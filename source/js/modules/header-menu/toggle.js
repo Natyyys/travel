@@ -11,7 +11,7 @@ const addToggleMenu = () => {
 
   const onLinkClick = (evt) => evt.target.matches('[data-link="link-menu"]') ? closeMenu() : null;
 
-  const isMenu = (evt) => (evt.target.closest(root) && evt.target.closest(toggle) || evt.target.closest(nav)) ? evt.preventDefault() : closeMenu();
+  const isMenu = (evt) => (evt.target.closest('[data-header="data-header"]') && evt.target.closest('[data-toggle="toggle-menu"]') || evt.target.closest('[data-menu="menu-nav"]')) ? evt.preventDefault() : closeMenu();
 
   function openMenu() {
     container.classList.add(OPENED_CLASS);
