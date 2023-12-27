@@ -105,72 +105,6 @@ export class Validator {
     return flag;
   }
 
-  _validateCheckbox(parent, input) {
-    let flag = true;
-    if (input.checked) {
-      this._setItemValidState(parent, input);
-    } else {
-      this._setItemInvalidState(parent, input);
-      flag = false;
-    }
-    return flag;
-  }
-
-  _findSelectedOption(options) {
-    let flag = false;
-    options.forEach((option) => {
-      if (option.value && option.selected) {
-        flag = true;
-      }
-    });
-    return flag;
-  }
-
-  _validateSelect(parent, input) {
-    const options = input.querySelectorAll('option');
-    const customSelectText = parent.querySelector('.custom-select__text');
-    input.setAttribute('aria-invalid', 'false');
-    let flag = true;
-    if (this._findSelectedOption(options)) {
-      this._setItemValidState(parent, input);
-    } else {
-      this._setItemInvalidState(parent, input);
-      parent.classList.remove('not-empty');
-      customSelectText.innerHTML = '';
-      flag = false;
-    }
-    return flag;
-  }
-
-  _returnCheckedElements(inputs) {
-    let flag = false;
-    inputs.forEach((input) => {
-      if (input.checked) {
-        flag = true;
-      }
-    });
-    return flag;
-  }
-
-  _removeGroupAria(inputs) {
-    inputs.forEach((input) => {
-      if (!input.checked) {
-        input.removeAttribute('aria-required');
-        input.removeAttribute('aria-invalid');
-      } else {
-        input.setAttribute('aria-required', true);
-        input.setAttribute('aria-invalid', false);
-      }
-    });
-  }
-
-  _setGroupAria(inputs) {
-    inputs.forEach((input) => {
-      input.setAttribute('aria-required', true);
-      input.setAttribute('aria-invalid', true);
-    });
-  }
-
   _validateToggleGroup(parent) {
     const formElements = parent.querySelectorAll('input');
     let flag = true;
@@ -205,18 +139,6 @@ export class Validator {
       parent.dataset.messageSuccess = 'Поле заполнено корректно';
       this._setItemValidState(parent, input);
       flag = true;
-    }
-    return flag;
-  }
-
-  _validateFile(parent, input) {
-    let flag = true;
-    const sizeTest = parent.dataset.maxSize && input.files[0] ? input.files[0].size < +parent.dataset.maxSize : true;
-    if (input.value && sizeTest) {
-      this._setItemValidState(parent, input);
-    } else {
-      this._setItemInvalidState(parent, input);
-      flag = false;
     }
     return flag;
   }
