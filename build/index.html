@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Организация походов в горы LIFETOUR">
+    <meta name="theme-color" content="#317EFB">
+    <meta name="description" content="Сайт Lifetour - организация походов в горы">
     <title>Travel</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/svg/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="fonts/montserrat300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat500.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -20,6 +23,7 @@
     <div class="wrapper">
       <div data-test="hero">
         <header class="header" data-header="data-header">
+          <h1 class="visually-hidden">LifeTour - организация походов в горы</h1>
           <div class="header__wrapper" data-container="header-wrapper">
             <a class="header__logo" href="index.html">
               <svg role="img" focusable="false" width="142" height="42">
@@ -27,8 +31,7 @@
               </svg>
               <span class="visually-hidden">Логотип турфирмы Lifetour</span>
             </a>
-            <button class="header__toggle toggle" type="button" data-toggle="toggle-menu">
-              <span class="visually-hidden">Отображение меню.</span>
+            <button class="header__toggle toggle" type="button" data-toggle="toggle-menu" aria-label="Переключатель отображения меню">
               <svg class="toggle__closed" role="img" focusable="false" width="26" height="26">
                 <use href="img/sprite.svg#toggle-open"></use>
               </svg>
@@ -65,7 +68,6 @@
         </header>
         <section class="hero">
           <div class="hero__container">
-            <h1 class="visually-hidden">LifeTour - организация походов в горы</h1>
             <div class="hero__slider swiper">
               <ul class="hero__list swiper-wrapper">
                 <li class="hero__item swiper-slide" tabindex="0">
@@ -94,17 +96,16 @@
                     </ul>
                     <div class="hero__video video">
                       <div class="video__wrapper" data-video="data-video">
-                        <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw" data-video-link="data-video-link">
                           <picture>
                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/hero/video-poster-desktop.webp 1x, img/content/hero/video-poster-desktop@2x.webp 2x">
                             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/video-poster-tablet.webp 1x, img/content/hero/video-poster-tablet@2x.webp 2x">
                             <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/hero/video-poster-desktop.jpg 1x, img/content/hero/video-poster-desktop@2x.jpg 2x">
-                            <img src="img/content/hero/video-poster-tablet.jpg" srcset="img/content/hero/video-poster-tablet@2x.jpg 2x" width="442" height="300" alt="Обложка видео." data-video-poster="data-video-poster">
+                            <img src="img/content/hero/video-poster-tablet.jpg" srcset="img/content/hero/video-poster-tablet@2x.jpg 2x" width="442" height="300" alt="" data-video-poster="data-video-poster">
                           </picture>
                         </a>
                         <button class="video__button" type="button" data-video-button="data-video-button">
                           <span class="visually-hidden">Запустить видео.</span>
-                          <svg role="img" focusable="false" width="12" height="22">
+                          <svg role="img" width="12" height="22" focusable="false" aria-hidden="true">
                             <use href="img/sprite.svg#play-video"></use>
                           </svg>
                         </button>
@@ -119,7 +120,7 @@
                       <source type="image/webp" media="(min-width: 320px)" srcset="img/content/hero/hero-сaucasus-mobile.webp 1x, img/content/hero/hero-сaucasus-mobile@2x.webp 2x">
                       <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/hero/hero-сaucasus-desktop.jpg 1x, img/content/hero/hero-сaucasus-desktop@2x.jpg 2x">
                       <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/hero/hero-сaucasus-tablet.jpg 1x, img/content/hero/hero-сaucasus-tablet@2x.jpg 2x">
-                      <img src="img/content/hero/hero-сaucasus-mobile.jpg" srcset="img/content/hero/hero-сaucasus-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: голубое небо, гора и облака.">
+                      <img src="img/content/hero/hero-сaucasus-mobile.jpg" srcset="img/content/hero/hero-сaucasus-mobile@2x.jpg 2x" width="320" height="568" alt="Кавказские горы.">
                     </picture>
                   </div>
                 </li>
@@ -135,13 +136,13 @@
                       </div>
                       <ul class="hero__info">
                         <li class="hero__info-item">
-                          <svg role="img" focusable="false" width="12" height="12" viewBox="0 0 12 12">
+                          <svg role="img" width="12" height="12" viewBox="0 0 12 12" focusable="false" aria-hidden="true">
                             <use href="img/sprite.svg#moon"></use>
                           </svg>
                           <span>9 дней/10 ночей</span>
                         </li>
                         <li class="hero__info-item">
-                          <svg role="img" focusable="false" width="12" height="12" viewBox="0 0 12 12">
+                          <svg role="img" width="12" height="12" viewBox="0 0 12 12" focusable="false" aria-hidden="true">
                             <use href="img/sprite.svg#level"></use>
                           </svg>
                           <span>Средняя сложность</span>
@@ -152,7 +153,7 @@
                           <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/hero/photo-desktop.webp 1x, img/content/hero/photo-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/photo-tablet.webp 1x, img/content/hero/photo-tablet@2x.webp 2x">
                           <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/hero/photo-desktop.png 1x, img/content/hero/photo-desktop@2x.png 2x">
-                          <img src="img/content/hero/photo-tablet.png" srcset="img/content/hero/photo-tablet@2x.png 2x" width="442" height="365" alt="Снимки гор на полароид." loading="lazy">
+                          <img src="img/content/hero/photo-tablet.png" srcset="img/content/hero/photo-tablet@2x.png 2x" width="442" height="365" alt="" loading="lazy">
                         </picture>
                       </div>
                     </div>
@@ -164,7 +165,7 @@
                       <source type="image/webp" media="(min-width: 320px)" srcset="img/content/hero/hero-kamchatka-mobile.webp 1x, img/content/hero/hero-kamchatka-mobile@2x.webp 2x">
                       <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/hero/hero-kamchatka-desktop.jpg 1x, img/content/hero/hero-kamchatka-desktop@2x.jpg 2x">
                       <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/hero/hero-kamchatka-tablet.jpg 1x, img/content/hero/hero-kamchatka-tablet@2x.jpg 2x">
-                      <img src="img/content/hero/hero-kamchatka-mobile.jpg" srcset="img/content/hero/hero-kamchatka-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: долина с высокими горами." loading="lazy">
+                      <img src="img/content/hero/hero-kamchatka-mobile.jpg" srcset="img/content/hero/hero-kamchatka-mobile@2x.jpg 2x" width="320" height="568" alt="Природа Камчатки." loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -180,13 +181,13 @@
                       </div>
                       <ul class="hero__info">
                         <li class="hero__info-item">
-                          <svg role="img" focusable="false" width="12" height="12" viewBox="0 0 12 12">
+                          <svg role="img" width="12" height="12" viewBox="0 0 12 12" focusable="false" aria-hidden="true">
                             <use href="img/sprite.svg#moon"></use>
                           </svg>
                           <span>8 дней/7 ночей</span>
                         </li>
                         <li class="hero__info-item">
-                          <svg role="img" focusable="false" width="12" height="12" viewBox="0 0 12 12">
+                          <svg role="img" width="12" height="12" viewBox="0 0 12 12" focusable="false" aria-hidden="true">
                             <use href="img/sprite.svg#level"></use>
                           </svg>
                           <span>Легкая сложность</span>
@@ -194,10 +195,9 @@
                       </ul>
                       <div class="hero__audio audio">
                         <div class="audio-wrapper" data-audio-wrapper="data-audio-wrapper">
-                          <a class="audio-link" href="https://music.yandex.ru/iframe/#track/112912322/25474374" data-audio-link="data-audio-link">
                             <picture>
                               <source type="image/webp" srcset="img/content/hero/audio-player.webp 1x, img/content/hero/audio-player@2x.webp 2x">
-                              <img src="img/content/hero/audio-player.png" srcset="img/content/hero/audio-player@2x.png 2x" width="340" height="220" alt="Обложка аудиоплеера." loading="lazy" data-audio-poster="data-audio-poster">
+                              <img src="img/content/hero/audio-player.png" srcset="img/content/hero/audio-player@2x.png 2x" width="340" height="220" alt="" loading="lazy" data-audio-poster="data-audio-poster">
                             </picture>
                           </a>
                           <button class="audio-button" type="button" data-audio-button="data-audio-button">
@@ -217,7 +217,7 @@
                       <source type="image/webp" media="(min-width: 320px)" srcset="img/content/hero/hero-altai-mobile.webp 1x, img/content/hero/hero-altai-mobile@2x.webp 2x">
                       <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/hero/hero-altai-desktop.jpg 1x, img/content/hero/hero-altai-desktop@2x.jpg 2x">
                       <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/hero/hero-altai-tablet.jpg 1x, img/content/hero/hero-altai-tablet@2x.jpg 2x">
-                      <img src="img/content/hero/hero-altai-mobile.jpg" srcset="img/content/hero/hero-altai-mobile@2x.jpg 2x" width="320" height="568" alt="Фон: горная река." loading="lazy">
+                      <img src="img/content/hero/hero-altai-mobile.jpg" srcset="img/content/hero/hero-altai-mobile@2x.jpg 2x" width="320" height="568" alt="Ландшафт Алтайских гор." loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -238,20 +238,20 @@
                     <div class="tours__content">
                       <div class="tours__info">
                         <div class="tours__location">
-                          <svg role="img" focusable="false" width="16" height="16">
+                          <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                             <use href="img/sprite.svg#pin"></use>
                           </svg>
                           <span>Кавказ</span>
                         </div>
                         <ul class="tours__days">
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" width="20" height="20" focusable="false" aria-hidden="true">
                               <use href="img/sprite.svg#sun"></use>
                             </svg>
                             <span>4 дня</span>
                           </li>
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" width="20" height="20" focusable="false" aria-hidden="true">
                               <use href="img/sprite.svg#moon"></use>
                             </svg>
                             <span>3 ночи</span>
@@ -266,19 +266,19 @@
                             <tr>
                               <td>Сложность:</td>
                               <td>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star-empty"></use>
                                 </svg>
                               </td>
@@ -298,7 +298,7 @@
                     <div class="tours__background">
                       <picture>
                         <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/elbrus/elbrus-1440.webp 1x, img/content/tours/elbrus/elbrus-1440@2x.webp 2x">
-                        <img src="img/content/tours/elbrus/elbrus-1440.jpg" srcset="img/content/tours/elbrus/elbrus-1440@2x.jpg 2x" width="380" height="416" alt="Фон: тропа в Эльбрус." loading="lazy">
+                        <img src="img/content/tours/elbrus/elbrus-1440.jpg" srcset="img/content/tours/elbrus/elbrus-1440@2x.jpg 2x" width="380" height="416" alt="Эльбрус в лучах солнца." loading="lazy">
                       </picture>
                     </div>
                   </li>
@@ -306,20 +306,20 @@
                     <div class="tours__content">
                       <div class="tours__info">
                         <div class="tours__location">
-                          <svg role="img" focusable="false" width="16" height="16">
+                          <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                             <use href="img/sprite.svg#pin"></use>
                           </svg>
                           <span>Алтай</span>
                         </div>
                         <ul class="tours__days">
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" width="20" height="20" focusable="false" aria-hidden="true">
                               <use href="img/sprite.svg#sun"></use>
                             </svg>
                             <span>14 дней</span>
                           </li>
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" width="20" height="20" focusable="false" aria-hidden="true">
                               <use href="img/sprite.svg#moon"></use>
                             </svg>
                             <span>13 ночей</span>
@@ -334,19 +334,19 @@
                             <tr>
                               <td>Сложность:</td>
                               <td>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star-empty"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" width="16" height="16" focusable="false" aria-hidden="true">
                                   <use href="img/sprite.svg#star-empty"></use>
                                 </svg>
                               </td>
@@ -366,7 +366,7 @@
                     <div class="tours__background">
                       <picture>
                         <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/belukha/belukha-1440.webp 1x, img/content/tours/belukha/belukha-1440@2x.webp 2x">
-                        <img src="img/content/tours/belukha/belukha-1440.jpg" srcset="img/content/tours/belukha/belukha-1440@2x.jpg 2x" width="380" height="416" alt="Фон: озеро у подножья Белухи." loading="lazy">
+                        <img src="img/content/tours/belukha/belukha-1440.jpg" srcset="img/content/tours/belukha/belukha-1440@2x.jpg 2x" width="380" height="416" alt="Озеро у подножья Белухи." loading="lazy">
                       </picture>
                     </div>
                   </li>
@@ -374,20 +374,20 @@
                     <div class="tours__content">
                       <div class="tours__info">
                         <div class="tours__location">
-                          <svg role="img" focusable="false" width="16" height="16">
+                          <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                             <use href="img/sprite.svg#pin"></use>
                           </svg>
                           <span>Адыгея</span>
                         </div>
                         <ul class="tours__days">
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" focusable="false" width="20" height="20" aria-hidden="true">
                               <use href="img/sprite.svg#sun"></use>
                             </svg>
                             <span>7 дней</span>
                           </li>
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" focusable="false" width="20" height="20" aria-hidden="true">
                               <use href="img/sprite.svg#moon"></use>
                             </svg>
                             <span>6 ночей</span>
@@ -402,19 +402,19 @@
                             <tr>
                               <td>Сложность:</td>
                               <td>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star-empty"></use>
                                 </svg>
                               </td>
@@ -434,7 +434,7 @@
                     <div class="tours__background">
                       <picture>
                         <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/fisht/fisht-1440.webp 1x, img/content/tours/fisht/fisht-1440@2x.webp 2x">
-                        <img src="img/content/tours/fisht/fisht-1440.jpg" srcset="img/content/tours/fisht/fisht-1440@2x.jpg 2x" width="380" height="416" alt="Фон: долина с деревьями у Фишт." loading="lazy">
+                        <img src="img/content/tours/fisht/fisht-1440.jpg" srcset="img/content/tours/fisht/fisht-1440@2x.jpg 2x" width="380" height="416" alt="Заснеженная гора Фишт." loading="lazy">
                       </picture>
                     </div>
                   </li>
@@ -442,20 +442,20 @@
                     <div class="tours__content">
                       <div class="tours__info">
                         <div class="tours__location">
-                          <svg role="img" focusable="false" width="16" height="16">
+                          <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                             <use href="img/sprite.svg#pin"></use>
                           </svg>
                           <span>Кавказ</span>
                         </div>
                         <ul class="tours__days">
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" focusable="false" width="20" height="20" aria-hidden="true">
                               <use href="img/sprite.svg#sun"></use>
                             </svg>
                             <span>4 дня</span>
                           </li>
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" focusable="false" width="20" height="20" aria-hidden="true">
                               <use href="img/sprite.svg#moon"></use>
                             </svg>
                             <span>3 ночи</span>
@@ -470,19 +470,19 @@
                             <tr>
                               <td>Сложность:</td>
                               <td>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star-empty"></use>
                                 </svg>
                               </td>
@@ -502,7 +502,7 @@
                     <div class="tours__background">
                       <picture>
                         <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/elbrus/elbrus-1440.webp 1x, img/content/tours/elbrus/elbrus-1440@2x.webp 2x">
-                        <img src="img/content/tours/elbrus/elbrus-1440.jpg" srcset="img/content/tours/elbrus/elbrus-1440@2x.jpg 2x" width="380" height="416" alt="Фон: тропа в Эльбрус." loading="lazy">
+                        <img src="img/content/tours/elbrus/elbrus-1440.jpg" srcset="img/content/tours/elbrus/elbrus-1440@2x.jpg 2x" width="380" height="416" alt="Эльбрус в лучах солнца." loading="lazy">
                       </picture>
                     </div>
                   </li>
@@ -510,20 +510,20 @@
                     <div class="tours__content">
                       <div class="tours__info">
                         <div class="tours__location">
-                          <svg role="img" focusable="false" width="16" height="16">
+                          <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                             <use href="img/sprite.svg#pin"></use>
                           </svg>
                           <span>Алтай</span>
                         </div>
                         <ul class="tours__days">
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" focusable="false" width="20" height="20" aria-hidden="true">
                               <use href="img/sprite.svg#sun"></use>
                             </svg>
                             <span>14 дней</span>
                           </li>
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" focusable="false" width="20" height="20" aria-hidden="true">
                               <use href="img/sprite.svg#moon"></use>
                             </svg>
                             <span>13 ночей</span>
@@ -538,19 +538,19 @@
                             <tr>
                               <td>Сложность:</td>
                               <td>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star-empty"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star-empty"></use>
                                 </svg>
                               </td>
@@ -570,7 +570,7 @@
                     <div class="tours__background">
                       <picture>
                         <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/belukha/belukha-1440.webp 1x, img/content/tours/belukha/belukha-1440@2x.webp 2x">
-                        <img src="img/content/tours/belukha/belukha-1440.jpg" srcset="img/content/tours/belukha/belukha-1440@2x.jpg 2x" width="380" height="416" alt="Фон: озеро у подножья Белухи." loading="lazy">
+                        <img src="img/content/tours/belukha/belukha-1440.jpg" srcset="img/content/tours/belukha/belukha-1440@2x.jpg 2x" width="380" height="416" alt="Озеро у подножья Белухи." loading="lazy">
                       </picture>
                     </div>
                   </li>
@@ -578,20 +578,20 @@
                     <div class="tours__content">
                       <div class="tours__info">
                         <div class="tours__location">
-                          <svg role="img" focusable="false" width="16" height="16">
+                          <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                             <use href="img/sprite.svg#pin"></use>
                           </svg>
                           <span>Адыгея</span>
                         </div>
                         <ul class="tours__days">
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" focusable="false" width="20" height="20" aria-hidden="true">
                               <use href="img/sprite.svg#sun"></use>
                             </svg>
                             <span>7 дней</span>
                           </li>
                           <li>
-                            <svg role="img" focusable="false" width="20" height="20">
+                            <svg role="img" focusable="false" width="20" height="20" aria-hidden="true">
                               <use href="img/sprite.svg#moon"></use>
                             </svg>
                             <span>6 ночей</span>
@@ -606,19 +606,19 @@
                             <tr>
                               <td>Сложность:</td>
                               <td>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star"></use>
                                 </svg>
-                                <svg role="img" focusable="false" width="16" height="16">
+                                <svg role="img" focusable="false" width="16" height="16" aria-hidden="true">
                                   <use href="img/sprite.svg#star-empty"></use>
                                 </svg>
                               </td>
@@ -638,7 +638,7 @@
                     <div class="tours__background">
                       <picture>
                         <source type="image/webp" media="(min-width: 320px)" srcset="img/content/tours/fisht/fisht-1440.webp 1x, img/content/tours/fisht/fisht-1440@2x.webp 2x">
-                        <img src="img/content/tours/fisht/fisht-1440.jpg" srcset="img/content/tours/fisht/fisht-1440@2x.jpg 2x" width="380" height="416" alt="Фон: долина с деревьями у Фишт." loading="lazy">
+                        <img src="img/content/tours/fisht/fisht-1440.jpg" srcset="img/content/tours/fisht/fisht-1440@2x.jpg 2x" width="380" height="416" alt="Заснеженная гора Фишт." loading="lazy">
                       </picture>
                     </div>
                   </li>
@@ -926,7 +926,7 @@
               <source type="image/webp" media="(min-width: 320px)" srcset="img/content/clouds/expedition-mobile.webp 1x, img/content/clouds/expedition-mobile@2x.webp 2x">
               <source type="image/jpg" media="(min-width: 1200px)" srcset="img/content/clouds/expedition-desktop.png 1x, img/content/clouds/expedition-desktop@2x.png 2x">
               <source type="image/jpg" media="(min-width: 768px)" srcset="img/content/clouds/expedition-tablet.png 1x, img/content/clouds/expedition-tablet@2x.png 2x">
-              <img src="img/content/clouds/expedition-mobile.png" srcset="img/content/clouds/expedition-mobile@2x.png 2x" width="434" height="400" alt="Поход в горах." loading="lazy">
+              <img src="img/content/clouds/expedition-mobile.png" srcset="img/content/clouds/expedition-mobile@2x.png 2x" width="434" height="400" alt="" loading="lazy">
             </picture>
           </div>
           <div class="about__container container">

@@ -1,5 +1,4 @@
 const video = document.querySelector('[data-video]');
-const link = document.querySelector('[data-video-link]');
 const button = document.querySelector('[data-video-button]');
 const cover = document.querySelector('[data-video-poster]');
 
@@ -33,7 +32,6 @@ const initVideoPlayer = () => {
       createVideo(document.querySelector('.video__wrapper'));
       document.querySelector('.video__wrapper iframe').src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
     });
-    link.removeAttribute('href');
     video.classList.add('video--enabled');
   }
 };

@@ -1,5 +1,4 @@
 const container = document.querySelector('[data-audio-wrapper]');
-const link = document.querySelector('[data-audio-link]');
 const button = document.querySelector('[data-audio-button]');
 const cover = document.querySelector('[data-audio-poster]');
 
@@ -33,7 +32,6 @@ const initAudioPlayer = () => {
       createAudio(document.querySelector('.audio-wrapper'));
       document.querySelector('.audio-wrapper iframe').src = 'https://music.yandex.ru/iframe/#track/116266134/25474374';
     });
-    link.removeAttribute('href');
     container.classList.add('audio--enabled');
   }
 };
