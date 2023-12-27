@@ -1290,96 +1290,9 @@ video {
   height: auto;
 }
 
-textarea {
-  resize: none;
-}
-
-input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
-          box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
-}
-
-input,
-textarea {
-  border-radius: 0;
-}
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  opacity: 1;
-}
-input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-}
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-}
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  opacity: 1;
-}
-input::placeholder,
-textarea::placeholder {
-  opacity: 1;
-}
-input:invalid,
-textarea:invalid {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-select {
-  border-radius: 0;
-}
-
-input::-ms-clear, input::-ms-reveal {
-  display: none;
-}
-
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-          appearance: none;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  margin: 0;
-  -webkit-appearance: none;
-          appearance: none;
-}
-
-input[type=number] {
-  -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
-}
-
-select,
-textarea,
-input:matches([type=email],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=url]) {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
 .wrapper {
   position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1423,10 +1336,6 @@ button,
   overflow: hidden;
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -1442,10 +1351,6 @@ button,
   .container {
     padding: 0 15px;
   }
-}
-
-.wrapper {
-  overflow: hidden;
 }
 
 .btn {

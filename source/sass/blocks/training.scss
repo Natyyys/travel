@@ -9,10 +9,6 @@
   padding-top: 43px;
   padding-bottom: 0;
 
-  // @media (min-width: 1200px) and (max-width: 1439px) {
-  //   max-width: 1136px;
-  // }
-
   @include vp-1199 {
     padding-top: 63px;
     row-gap: 29px;

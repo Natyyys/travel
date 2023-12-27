@@ -15,10 +15,6 @@
     padding-bottom: 45px;
   }
 
-  // @media (min-width: 1024px) and (max-width: 1024px) {
-  //   padding-bottom: 46px;
-  // }
-
   @include vp-767 {
     padding-top: 48px;
     padding-bottom: 40px;
@@ -168,12 +164,6 @@
     br {
       display: none;
     }
-
-    // @media (min-width: 768px) {
-    //   br {
-    //     display: none;
-    //   }
-    // }
 
     @include vp-767 {
       font-size: 12px;
