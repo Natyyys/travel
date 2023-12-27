@@ -19,16 +19,15 @@ const initForm = () => {
 
 const requiredInput = () => {
   initForm();
-
-  phoneInput.onchange = function () {
+  phoneInput.onchange = () => {
     if (phone.classList.contains(CLASS_VALID)) {
       removesAttrRequired(email);
     }
   };
-
-  emailInput.onchange = function () {
+  emailInput.onchange = () => {
     removesAttrRequired(phone);
   };
 };
 
 export {requiredInput};
+

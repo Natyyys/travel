@@ -19,15 +19,15 @@
   <body>
     <div class="wrapper">
       <div data-test="hero">
-        <header class="header" id="header" data-test="hero">
-          <div class="header__wrapper">
+        <header class="header" data-header="data-header">
+          <div class="header__wrapper" data-container="header-wrapper">
             <a class="header__logo" href="index.html">
               <svg role="img" focusable="false" width="142" height="42">
                 <use href="img/sprite.svg#logo"></use>
               </svg>
               <span class="visually-hidden">Логотип турфирмы Lifetour</span>
             </a>
-            <button class="header__toggle toggle" type="button">
+            <button class="header__toggle toggle" type="button" data-toggle="toggle-menu">
               <span class="visually-hidden">Отображение меню.</span>
               <svg class="toggle__closed" role="img" focusable="false" width="26" height="26">
                 <use href="img/sprite.svg#toggle-open"></use>
@@ -36,25 +36,25 @@
                 <use href="img/sprite.svg#toggle-close"></use>
               </svg>
             </button>
-            <nav class="header__nav nav">
+            <nav class="header__nav nav" data-menu="menu-nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link" href="#tours">Туры</a>
+                  <a class="nav__link" href="#tours" data-link="link-menu">Туры</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#training">Обучение</a>
+                  <a class="nav__link" href="#training" data-link="link-menu">Обучение</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#about">О нас</a>
+                  <a class="nav__link" href="#about" data-link="link-menu">О нас</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#reviews">Отзывы</a>
+                  <a class="nav__link" href="#reviews" data-link="link-menu">Отзывы</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#gallery">Фотографии</a>
+                  <a class="nav__link" href="#gallery" data-link="link-menu">Фотографии</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#contacts">Контакты</a>
+                  <a class="nav__link" href="#contacts" data-link="link-menu">Контакты</a>
                 </li>
               </ul>
             </nav>
