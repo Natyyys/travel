@@ -73,12 +73,10 @@
     padding-right: 20px;
 
     @include vp-1199 {
-      width: 480px;
       padding-right: 0;
     }
 
     @include vp-767 {
-      width: 100%;
       font-size: 14px;
       line-height: 20px;
       padding-right: 14px;
@@ -128,6 +126,21 @@
       width: 22px;
       height: 22px;
     }
+  }
+}
+
+.contacts__info-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @include vp-1199 {
+    width: 480px;
+  }
+
+  @include vp-767 {
+    width: 100%;
   }
 }
 

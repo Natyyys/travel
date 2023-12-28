@@ -17,6 +17,12 @@
       width: 26px;
       height: 26px;
     }
+
+    &:focus,
+    &:focus-visible {
+      outline: 1px solid $color-default-white;
+      outline-offset: 5px;
+    }
   }
 
   @include vp-767 {
@@ -31,6 +37,12 @@
   @include vp-767 {
     padding: 15px;
     margin-top: -8px;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid $color-elephant;
+    outline-offset: 5px;
   }
 }
 

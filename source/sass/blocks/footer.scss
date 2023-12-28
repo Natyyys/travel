@@ -4,14 +4,14 @@
 
 .footer__container {
   padding-top: 38px;
-  padding-bottom: 27px;
+  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   @include vp-1199 {
     padding-top: 34px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
 
   @include vp-767 {
@@ -35,7 +35,7 @@
   @include vp-767 {
     flex-direction: column;
     row-gap: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 13px;
   }
 }
 
@@ -73,18 +73,18 @@
 
     @include vp-1199 {
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: end;
       padding: 0;
       gap: 14px;
     }
 
     @include vp-767 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, auto);
-      grid-auto-flow: column;
+      display: block;
+      column-count: 2;
+      min-width: 296px;
       column-gap: 33px;
-      row-gap: 5px;
+      column-width: 120px;
     }
   }
 
@@ -93,6 +93,11 @@
 
     @include vp-1199 {
       padding: 0;
+      text-align: center;
+    }
+
+    @include vp-767 {
+      margin-bottom: 5px;
     }
   }
 
@@ -129,7 +134,12 @@
 }
 
 .footer__contacts {
-  margin-top: 5px;
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: end;
+  width: 145px;
 
   @include vp-1199 {
     display: none;
@@ -141,7 +151,6 @@
   font-size: 18px;
   line-height: 1;
   padding: 10px 0;
-  margin-top: 3px;
   width: fit-content;
 
   @include vp-1199 {
@@ -187,14 +196,14 @@
   flex-direction: row;
   column-gap: 15px;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 
   @include vp-1199 {
-    margin-bottom: 27px;
+    margin-bottom: 34px;
   }
 
   @include vp-767 {
-    margin-bottom: 16px;
+    margin-bottom: 23px;
   }
 }
 
@@ -247,6 +256,10 @@
 
 .footer__privacy {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .footer__privacy-link {

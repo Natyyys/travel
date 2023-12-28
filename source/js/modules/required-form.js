@@ -30,4 +30,3 @@ const requiredInput = () => {
 };
 
 export {requiredInput};
-

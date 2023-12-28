@@ -1,4 +1,5 @@
 import '../../utils/scroll-lock';
+import '../../utils/focus-lock';
 
 const addToggleMenu = () => {
   const OPENED_CLASS = 'is-opened';
@@ -21,6 +22,7 @@ const addToggleMenu = () => {
     nav.addEventListener('click', onLinkClick);
     document.addEventListener('click', isMenu);
     window.scrollLock.disableScrolling();
+    window.focusLock.lock('[data-container="header-wrapper"]', false);
     document.addEventListener('click', onDocumentOutside);
   }
 
@@ -32,6 +34,8 @@ const addToggleMenu = () => {
     nav.removeEventListener('click', onLinkClick);
     document.removeEventListener('click', isMenu);
     window.scrollLock.enableScrolling();
+    window.focusLock.lock('[data-link="link-menu"]', false);
+    window.focusLock.unlock();
     document.removeEventListener('click', onDocumentOutside);
   }
 
