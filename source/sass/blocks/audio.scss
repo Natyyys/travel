@@ -17,9 +17,7 @@
   cursor: pointer;
   color: $color-resolution-blue;
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
+  @include hover-focus {
     stroke: $color-default-black;
     color: $color-default-white;
     outline: 0;

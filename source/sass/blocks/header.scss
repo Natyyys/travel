@@ -29,9 +29,7 @@
     padding: 16px 0 0;
   }
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
+  @include hover-focus {
     color: $color-resolution-blue;
     outline: none;
   }
@@ -113,9 +111,7 @@
     height: auto;
   }
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
+  @include hover-focus {
     color: $color-resolution-blue;
     outline: none;
   }
@@ -161,9 +157,7 @@
     color: $color-elephant;
     z-index: 1;
 
-    &:hover,
-    &:focus,
-    &:focus-visible {
+    @include hover-focus {
       color: $color-resolution-blue;
       outline: none;
     }

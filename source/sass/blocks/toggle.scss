@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    color: $color-default-white;
+    fill: $color-default-white;
     background-color: $color-transparent;
     border: none;
     outline: none;
@@ -20,8 +20,7 @@
 
     &:focus,
     &:focus-visible {
-      outline: 1px solid $color-default-white;
-      outline-offset: 5px;
+      fill: $color-resolution-blue;
     }
   }
 
@@ -33,6 +32,7 @@
 
 .toggle.is-opened {
   padding: 0;
+  stroke: $color-elephant;
 
   @include vp-767 {
     padding: 15px;
@@ -41,8 +41,7 @@
 
   &:focus,
   &:focus-visible {
-    outline: 1px solid $color-elephant;
-    outline-offset: 5px;
+    stroke: $color-navy-blue;
   }
 }
 

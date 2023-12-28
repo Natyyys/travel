@@ -11,9 +11,7 @@
   user-select: none;
   text-align: center;
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
+  @include hover-focus {
     background-color: $color-default-white;
     color: $color-resolution-blue;
     border: 1px solid $color-resolution-blue;
@@ -37,9 +35,7 @@
     padding: 21px 20px 19px;
     min-width: 180px;
 
-    &:hover,
-    &:focus,
-    &:focus-visible {
+    @include hover-focus {
       padding: 20px 19px 18px;
     }
   }
@@ -54,9 +50,7 @@
       margin: auto;
     }
 
-    &:hover,
-    &:focus,
-    &:focus-visible {
+    @include hover-focus {
       fill: $color-resolution-blue;
     }
 

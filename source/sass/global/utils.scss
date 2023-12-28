@@ -36,3 +36,7 @@
 .scroll-lock {
   overflow: hidden;
 }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
